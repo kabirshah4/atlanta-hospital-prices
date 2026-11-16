@@ -1,0 +1,38 @@
+{
+  "n_hospitals": 18,
+  "n_procedures": 30,
+  "n_prices": 7882,
+  "median_ratio": 2.0052442316416723,
+  "max_ratio_procedure": "Echocardiogram (heart ultrasound)",
+  "max_ratio": 6.473609680741504,
+  "shock": {
+    "procedure": "Hip or knee replacement",
+    "brand": "Cigna",
+    "cheap": "Piedmont Atlanta",
+    "cheap_price": 36426.315,
+    "pricey": "Wellstar Cobb Hospital",
+    "pricey_price": 75616.09,
+    "miles": 12.4
+  },
+  "variance_explained": {
+    "system": 0.30615906610454163,
+    "insurer": 0.3394815228241906,
+    "both": 0.7358185229264016
+  },
+  "commercial_vs_ma_multiple": 2.4560031514055587,
+  "cash_cheaper_share": 0.16666666666666666,
+  "n_cash_compared": 402,
+  "cash_as_share_of_list": {
+    "Emory": 1.0,
+    "Grady": 1.0,
+    "Piedmont": 0.3,
+    "Wellstar": 0.39
+  },
+  "price_index_by_system": {
+    "Emory": 0.86,
+    "Grady": 1.11,
+    "Piedmont": 1.22,
+    "Wellstar": 1.19
+  },
+  "stars_price_spearman": 0.2158080397627885
+}

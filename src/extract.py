@@ -3,6 +3,8 @@
 Hospitals publish one of two CMS formats:
   * tall: one row per (item, payer, plan)            -- Emory, Wellstar, Piedmont
   * wide: one row per item, one column per payer/plan -- Grady
+'direct' = the procedure code is the row's main code (a fee for that procedure), not a secondary
+code on a hospital line item (often priced as a percent of the hospital's list price).
 Both become one tidy table: data/extracted.parquet
 """
 from pathlib import Path
@@ -34,8 +36,8 @@ def code_match_sql(cols):
             continue
         c, t = f'"code|{n}"', f'upper("code|{n}|type")'
         cases.append(
-            f"when {t} in ('CPT','HCPCS') and {c} in ({code_list}) then {c}||'|CPT' "
-            f"when {t} = 'MS-DRG' and {NORM.format(c=c)} in ({code_list}) then {NORM.format(c=c)}||'|MS-DRG'"
+            f"when {t} in ('CPT','HCPCS') and {c} in ({code_list}) then {c}||'|CPT|{n}' "
+            f"when {t} = 'MS-DRG' and {NORM.format(c=c)} in ({code_list}) then {NORM.format(c=c)}||'|MS-DRG|{n}'"
         )
     return "case " + " ".join(cases) + " end"
 
@@ -50,6 +52,7 @@ def extract_tall(path, hospital):
     match = code_match_sql(cols)
     q = f"""
     select '{hospital.replace("'", "''")}' as hospital, split_part(m,'|',1) as code, split_part(m,'|',2) as code_system,
+           split_part(m,'|',3) = '1' as direct,
            description, {col(cols,'setting','setting')}, {col(cols,'billing_class','billing_class')},
            {col(cols,'modifiers','modifiers')}, payer_name as payer, plan_name as plan,
            try_cast("standard_charge|negotiated_dollar" as double) as negotiated,
@@ -76,6 +79,7 @@ def extract_wide(path, hospital):
         "hospital": hospital,
         "code": long.m.str.split("|").str[0],
         "code_system": long.m.str.split("|").str[1],
+        "direct": long.m.str.split("|").str[2] == "1",
         "description": long.description,
         "setting": long.setting,
         "billing_class": long.billing_class,

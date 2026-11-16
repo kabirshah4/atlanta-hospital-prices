@@ -1,0 +1,31 @@
+code,procedure,n_hospitals,cheapest,cheapest_price,priciest,priciest_price,ratio,gap,median
+93306,Echocardiogram (heart ultrasound),12,Grady Health System,543.76,Piedmont Atlanta,3520.09,6.473609680741504,2976.33,2821.95
+97110,"Physical therapy (therapeutic exercise, 15 min)",13,Emory Hillandale Hospital,43.22,Piedmont Atlanta,252.7,5.846830171217029,209.48,107.245
+71046,Chest X-ray (2 views),18,Emory Hillandale Hospital,40.465,Grady Health System,185.87,4.59335227974793,145.405,79.235
+80061,Cholesterol (lipid) panel,18,Emory Decatur Hospital,13.39,Wellstar Cobb Hospital,49.14,3.669902912621359,35.75,19.085
+74177,CT scan of abdomen and pelvis (with contrast),18,Wellstar Cobb Hospital,548.78,Grady Health System,1786.43,3.255275338022523,1237.65,711.0
+85025,Complete blood count (CBC),18,Emory Decatur Hospital,7.77,Wellstar Cobb Hospital,24.51,3.154440154440155,16.740000000000002,12.22
+84443,Thyroid test (TSH),18,Emory Decatur Hospital,16.8,Wellstar Cobb Hospital,52.29,3.1125,35.489999999999995,23.945
+80053,Comprehensive metabolic panel (blood test),18,Emory Decatur Hospital,10.56,Wellstar Cobb Hospital,32.68,3.0946969696969697,22.119999999999997,15.05
+47562,Gallbladder removal (laparoscopic),12,Emory Decatur Hospital,7030.77,Wellstar Cobb Hospital,19038.605,2.7078975702519066,12007.835,7340.9425
+76700,Abdominal ultrasound,18,Emory Decatur Hospital,145.0,Piedmont Rockdale,390.21,2.691103448275862,245.20999999999998,197.41
+76805,Pregnancy ultrasound,18,Emory Decatur Hospital,164.03,Piedmont Rockdale,426.0,2.597085898920929,261.97,214.07
+99285,ER visit (severe),12,Piedmont Eastside,1799.0,Grady Health System,4044.48,2.248182323513063,2245.48,1962.25
+73721,Knee/leg joint MRI (no contrast),18,Wellstar Cobb Hospital,507.52,Grady Health System,1116.25,2.1994207124842373,608.73,628.0
+70450,CT scan of head (no contrast),18,Wellstar Cobb Hospital,265.1,Piedmont Atlanta,567.0,2.1388155413051675,301.9,383.0
+66984,Cataract surgery,12,Grady Health System,4016.0,Wellstar Cobb Hospital,8057.0,2.006225099601594,4041.0,4581.0
+70553,Brain MRI (with and without contrast),18,Emory Hillandale Hospital,891.315,Grady Health System,1786.43,2.0042633636817513,895.115,955.0
+99283,ER visit (moderate),12,Wellstar Kennestone Hospital,931.1949999999999,Piedmont Rockdale,1864.43,2.0021907334124434,933.2350000000001,1559.825
+788,C-section birth (no complications),14,Piedmont Eastside,13473.0,Wellstar Cobb Hospital,26643.655,1.977559192458992,13170.654999999999,16812.64
+99284,ER visit (serious),12,Wellstar Kennestone Hospital,1423.38,Grady Health System,2794.915,1.9635761356770502,1371.5349999999999,1816.0
+807,Vaginal childbirth (no complications),14,Piedmont Atlanta,9853.5,Wellstar Cobb Hospital,18759.485,1.9038397523722537,8905.985,11837.58
+470,Hip or knee replacement,17,Piedmont Eastside,29321.21,Wellstar Cobb Hospital,55510.065,1.8931710185220871,26188.855000000003,36251.75
+70551,Brain MRI (no contrast),18,Emory Hillandale Hospital,605.3,Grady Health System,1116.25,1.8441268792334382,510.95000000000005,724.46
+72148,Lower back MRI (no contrast),18,Emory Hillandale Hospital,605.3,Grady Health System,1116.25,1.8441268792334382,510.95000000000005,724.46
+71250,CT scan of chest (no contrast),18,Wellstar Kennestone Hospital,314.63,Piedmont Atlanta,567.0,1.8021167720814926,252.37,383.0
+49505,Inguinal hernia repair,12,Grady Health System,4877.0,Wellstar Cobb Hospital,8448.0,1.7322124256715195,3571.0,5594.0
+29881,Knee arthroscopy (meniscus repair),12,Grady Health System,4877.0,Wellstar Cobb Hospital,8448.0,1.7322124256715195,3571.0,5594.0
+45380,Colonoscopy with biopsy,18,Grady Health System,2880.0,Wellstar Cobb Hospital,4714.0,1.6368055555555556,1834.0,3425.0
+77067,Screening mammogram,18,Emory Decatur Hospital,167.54000000000002,Piedmont Atlanta,252.0,1.5041184194819146,84.45999999999998,179.26999999999998
+45378,Colonoscopy (diagnostic),12,Grady Health System,2880.0,Wellstar Cobb Hospital,3683.25,1.27890625,803.25,3425.0
+43239,Upper endoscopy with biopsy,18,Grady Health System,2880.0,Wellstar Cobb Hospital,3592.27,1.2473159722222222,712.27,3425.0

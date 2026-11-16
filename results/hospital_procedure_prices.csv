@@ -1,0 +1,473 @@
+hospital,code,typical,n_plans,medicare_adv,cash,gross,procedure,category,system,stars
+Emory Decatur Hospital,29881,5594.0,9,3380.35,11309.0,11309.0,Knee arthroscopy (meniscus repair),Surgery,Emory,2
+Emory Decatur Hospital,43239,3425.0,9,937.02,3597.0,3597.0,Upper endoscopy with biopsy,Procedures,Emory,2
+Emory Decatur Hospital,45378,3425.0,9,960.75,3649.5,3649.5,Colonoscopy (diagnostic),Procedures,Emory,2
+Emory Decatur Hospital,45380,3425.0,9,1236.27,3732.0,3732.0,Colonoscopy with biopsy,Procedures,Emory,2
+Emory Decatur Hospital,470,35027.875,10,18377.97,,,Hip or knee replacement,Inpatient,Emory,2
+Emory Decatur Hospital,47562,7030.77,9,6245.73,16385.0,16385.0,Gallbladder removal (laparoscopic),Surgery,Emory,2
+Emory Decatur Hospital,49505,5594.0,9,3698.97,8568.0,8568.0,Inguinal hernia repair,Surgery,Emory,2
+Emory Decatur Hospital,66984,4581.0,9,2384.25,10558.0,10558.0,Cataract surgery,Surgery,Emory,2
+Emory Decatur Hospital,70450,383.0,5,107.485,1160.0,1160.0,CT scan of head (no contrast),Imaging,Emory,2
+Emory Decatur Hospital,70551,628.0,5,245.305,2066.5,2066.5,Brain MRI (no contrast),Imaging,Emory,2
+Emory Decatur Hospital,70553,954.63,5,358.68,3431.0,3431.0,Brain MRI (with and without contrast),Imaging,Emory,2
+Emory Decatur Hospital,71046,41.21,9,89.03,260.0,260.0,Chest X-ray (2 views),Imaging,Emory,2
+Emory Decatur Hospital,71250,383.0,5,107.485,1160.0,1160.0,CT scan of chest (no contrast),Imaging,Emory,2
+Emory Decatur Hospital,72148,628.0,5,245.305,2066.5,2066.5,Lower back MRI (no contrast),Imaging,Emory,2
+Emory Decatur Hospital,73721,628.0,5,245.305,2066.5,2066.5,Knee/leg joint MRI (no contrast),Imaging,Emory,2
+Emory Decatur Hospital,74177,711.0,5,358.68,3563.0,3563.0,CT scan of abdomen and pelvis (with contrast),Imaging,Emory,2
+Emory Decatur Hospital,76700,145.0,9,108.01,2352.0,2352.0,Abdominal ultrasound,Imaging,Emory,2
+Emory Decatur Hospital,76805,164.03,9,108.01,983.0,983.0,Pregnancy ultrasound,Imaging,Emory,2
+Emory Decatur Hospital,77067,167.54000000000002,8,,229.5,229.5,Screening mammogram,Imaging,Emory,2
+Emory Decatur Hospital,788,16812.64,10,10947.885,,,C-section birth (no complications),Inpatient,Emory,2
+Emory Decatur Hospital,80053,10.56,9,10.825,287.0,287.0,Comprehensive metabolic panel (blood test),Lab,Emory,2
+Emory Decatur Hospital,80061,13.39,9,13.725,201.0,201.0,Cholesterol (lipid) panel,Lab,Emory,2
+Emory Decatur Hospital,807,11837.58,10,8768.11,,,Vaginal childbirth (no complications),Inpatient,Emory,2
+Emory Decatur Hospital,84443,16.8,9,17.22,201.5,201.5,Thyroid test (TSH),Lab,Emory,2
+Emory Decatur Hospital,85025,7.77,9,7.965,114.0,114.0,Complete blood count (CBC),Lab,Emory,2
+Emory Decatur Hospital,97110,47.545,4,28.47,180.0,180.0,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Emory,2
+Emory Hillandale Hospital,29881,5498.195,8,3380.35,11309.0,11309.0,Knee arthroscopy (meniscus repair),Surgery,Emory,1
+Emory Hillandale Hospital,43239,3360.0,8,937.02,3597.0,3597.0,Upper endoscopy with biopsy,Procedures,Emory,1
+Emory Hillandale Hospital,45378,3360.0,8,960.75,3649.5,3649.5,Colonoscopy (diagnostic),Procedures,Emory,1
+Emory Hillandale Hospital,45380,3360.0,8,1236.27,3732.0,3732.0,Colonoscopy with biopsy,Procedures,Emory,1
+Emory Hillandale Hospital,470,34025.73,9,21567.144999999997,,,Hip or knee replacement,Inpatient,Emory,1
+Emory Hillandale Hospital,47562,7413.885,8,6245.73,16385.0,16385.0,Gallbladder removal (laparoscopic),Surgery,Emory,1
+Emory Hillandale Hospital,49505,5498.195,8,3698.97,8568.0,8568.0,Inguinal hernia repair,Surgery,Emory,1
+Emory Hillandale Hospital,66984,4517.895,8,2384.25,10558.0,10558.0,Cataract surgery,Surgery,Emory,1
+Emory Hillandale Hospital,70450,331.6,4,107.485,1160.0,1160.0,CT scan of head (no contrast),Imaging,Emory,1
+Emory Hillandale Hospital,70551,605.3,4,245.305,2066.5,2066.5,Brain MRI (no contrast),Imaging,Emory,1
+Emory Hillandale Hospital,70553,891.315,4,358.68,3431.0,3431.0,Brain MRI (with and without contrast),Imaging,Emory,1
+Emory Hillandale Hospital,71046,40.465,8,89.03,260.0,260.0,Chest X-ray (2 views),Imaging,Emory,1
+Emory Hillandale Hospital,71250,331.6,4,107.485,1160.0,1160.0,CT scan of chest (no contrast),Imaging,Emory,1
+Emory Hillandale Hospital,72148,605.3,4,245.305,2066.5,2066.5,Lower back MRI (no contrast),Imaging,Emory,1
+Emory Hillandale Hospital,73721,605.3,4,245.305,2066.5,2066.5,Knee/leg joint MRI (no contrast),Imaging,Emory,1
+Emory Hillandale Hospital,74177,832.815,4,358.68,3563.0,3563.0,CT scan of abdomen and pelvis (with contrast),Imaging,Emory,1
+Emory Hillandale Hospital,76700,157.73000000000002,8,108.01,2352.0,2352.0,Abdominal ultrasound,Imaging,Emory,1
+Emory Hillandale Hospital,76805,178.425,8,108.01,983.0,983.0,Pregnancy ultrasound,Imaging,Emory,1
+Emory Hillandale Hospital,77067,170.08,7,,229.5,229.5,Screening mammogram,Imaging,Emory,1
+Emory Hillandale Hospital,788,16331.63,9,14273.095,,,C-section birth (no complications),Inpatient,Emory,1
+Emory Hillandale Hospital,80053,10.56,8,10.825,287.0,287.0,Comprehensive metabolic panel (blood test),Lab,Emory,1
+Emory Hillandale Hospital,80061,13.39,8,13.725,201.0,201.0,Cholesterol (lipid) panel,Lab,Emory,1
+Emory Hillandale Hospital,807,11837.3,9,12014.86,,,Vaginal childbirth (no complications),Inpatient,Emory,1
+Emory Hillandale Hospital,84443,16.8,8,17.22,201.5,201.5,Thyroid test (TSH),Lab,Emory,1
+Emory Hillandale Hospital,85025,7.77,8,7.965,114.0,114.0,Complete blood count (CBC),Lab,Emory,1
+Emory Hillandale Hospital,97110,43.22,3,28.47,180.0,180.0,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Emory,1
+Emory Johns Creek Hospital,29881,5594.0,9,3423.12,11309.0,11309.0,Knee arthroscopy (meniscus repair),Surgery,Emory,4
+Emory Johns Creek Hospital,43239,3425.0,9,948.87,3597.0,3597.0,Upper endoscopy with biopsy,Procedures,Emory,4
+Emory Johns Creek Hospital,45378,3425.0,9,972.91,3649.5,3649.5,Colonoscopy (diagnostic),Procedures,Emory,4
+Emory Johns Creek Hospital,45380,3425.0,9,1251.91,3732.0,3732.0,Colonoscopy with biopsy,Procedures,Emory,4
+Emory Johns Creek Hospital,470,35027.875,10,14391.490000000002,,,Hip or knee replacement,Inpatient,Emory,4
+Emory Johns Creek Hospital,47562,7030.77,9,6324.74,16385.0,16385.0,Gallbladder removal (laparoscopic),Surgery,Emory,4
+Emory Johns Creek Hospital,49505,5594.0,9,3745.76,8568.0,8568.0,Inguinal hernia repair,Surgery,Emory,4
+Emory Johns Creek Hospital,66984,4581.0,9,2414.41,10558.0,10558.0,Cataract surgery,Surgery,Emory,4
+Emory Johns Creek Hospital,70450,383.0,5,108.84,1160.0,1160.0,CT scan of head (no contrast),Imaging,Emory,4
+Emory Johns Creek Hospital,70551,628.0,5,248.41,2066.5,2066.5,Brain MRI (no contrast),Imaging,Emory,4
+Emory Johns Creek Hospital,70553,954.63,5,363.21500000000003,3431.0,3431.0,Brain MRI (with and without contrast),Imaging,Emory,4
+Emory Johns Creek Hospital,71046,41.21,9,90.16,260.0,260.0,Chest X-ray (2 views),Imaging,Emory,4
+Emory Johns Creek Hospital,71250,383.0,5,108.84,1160.0,1160.0,CT scan of chest (no contrast),Imaging,Emory,4
+Emory Johns Creek Hospital,72148,628.0,5,248.41,2066.5,2066.5,Lower back MRI (no contrast),Imaging,Emory,4
+Emory Johns Creek Hospital,73721,628.0,5,248.41,2066.5,2066.5,Knee/leg joint MRI (no contrast),Imaging,Emory,4
+Emory Johns Creek Hospital,74177,711.0,5,363.21500000000003,3563.0,3563.0,CT scan of abdomen and pelvis (with contrast),Imaging,Emory,4
+Emory Johns Creek Hospital,76700,145.0,9,109.37,2352.0,2352.0,Abdominal ultrasound,Imaging,Emory,4
+Emory Johns Creek Hospital,76805,164.03,9,109.37,983.0,983.0,Pregnancy ultrasound,Imaging,Emory,4
+Emory Johns Creek Hospital,77067,167.54000000000002,8,,229.5,229.5,Screening mammogram,Imaging,Emory,4
+Emory Johns Creek Hospital,788,16812.64,10,7153.584999999999,,,C-section birth (no complications),Inpatient,Emory,4
+Emory Johns Creek Hospital,80053,10.56,9,10.825,287.0,287.0,Comprehensive metabolic panel (blood test),Lab,Emory,4
+Emory Johns Creek Hospital,80061,13.39,9,13.725,201.0,201.0,Cholesterol (lipid) panel,Lab,Emory,4
+Emory Johns Creek Hospital,807,11837.58,10,5030.2,,,Vaginal childbirth (no complications),Inpatient,Emory,4
+Emory Johns Creek Hospital,84443,16.8,9,17.22,201.5,201.5,Thyroid test (TSH),Lab,Emory,4
+Emory Johns Creek Hospital,85025,7.77,9,7.965,114.0,114.0,Complete blood count (CBC),Lab,Emory,4
+Emory Johns Creek Hospital,97110,47.545,4,28.47,180.0,180.0,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Emory,4
+Emory Saint Joseph's Hospital,29881,5594.0,9,3423.12,11309.0,11309.0,Knee arthroscopy (meniscus repair),Surgery,Emory,3
+Emory Saint Joseph's Hospital,43239,3425.0,9,948.87,3597.0,3597.0,Upper endoscopy with biopsy,Procedures,Emory,3
+Emory Saint Joseph's Hospital,45378,3425.0,9,972.91,3649.5,3649.5,Colonoscopy (diagnostic),Procedures,Emory,3
+Emory Saint Joseph's Hospital,45380,3425.0,9,1251.91,3732.0,3732.0,Colonoscopy with biopsy,Procedures,Emory,3
+Emory Saint Joseph's Hospital,470,35027.875,10,14346.01,,,Hip or knee replacement,Inpatient,Emory,3
+Emory Saint Joseph's Hospital,47562,7030.77,9,6324.74,16385.0,16385.0,Gallbladder removal (laparoscopic),Surgery,Emory,3
+Emory Saint Joseph's Hospital,49505,5594.0,9,3745.76,8568.0,8568.0,Inguinal hernia repair,Surgery,Emory,3
+Emory Saint Joseph's Hospital,66984,4581.0,9,2414.41,10558.0,10558.0,Cataract surgery,Surgery,Emory,3
+Emory Saint Joseph's Hospital,70450,383.0,5,108.84,1160.0,1160.0,CT scan of head (no contrast),Imaging,Emory,3
+Emory Saint Joseph's Hospital,70551,628.0,5,248.41,2066.5,2066.5,Brain MRI (no contrast),Imaging,Emory,3
+Emory Saint Joseph's Hospital,70553,954.63,5,363.21500000000003,3431.0,3431.0,Brain MRI (with and without contrast),Imaging,Emory,3
+Emory Saint Joseph's Hospital,71046,41.21,9,90.16,260.0,260.0,Chest X-ray (2 views),Imaging,Emory,3
+Emory Saint Joseph's Hospital,71250,383.0,5,108.84,1160.0,1160.0,CT scan of chest (no contrast),Imaging,Emory,3
+Emory Saint Joseph's Hospital,72148,628.0,5,248.41,2066.5,2066.5,Lower back MRI (no contrast),Imaging,Emory,3
+Emory Saint Joseph's Hospital,73721,628.0,5,248.41,2066.5,2066.5,Knee/leg joint MRI (no contrast),Imaging,Emory,3
+Emory Saint Joseph's Hospital,74177,711.0,5,363.21500000000003,3563.0,3563.0,CT scan of abdomen and pelvis (with contrast),Imaging,Emory,3
+Emory Saint Joseph's Hospital,76700,145.0,9,109.37,2352.0,2352.0,Abdominal ultrasound,Imaging,Emory,3
+Emory Saint Joseph's Hospital,76805,164.03,9,109.37,983.0,983.0,Pregnancy ultrasound,Imaging,Emory,3
+Emory Saint Joseph's Hospital,77067,167.54000000000002,8,,229.5,229.5,Screening mammogram,Imaging,Emory,3
+Emory Saint Joseph's Hospital,788,16812.64,10,7130.985000000001,,,C-section birth (no complications),Inpatient,Emory,3
+Emory Saint Joseph's Hospital,80053,10.56,9,10.825,287.0,287.0,Comprehensive metabolic panel (blood test),Lab,Emory,3
+Emory Saint Joseph's Hospital,80061,13.39,9,13.725,201.0,201.0,Cholesterol (lipid) panel,Lab,Emory,3
+Emory Saint Joseph's Hospital,807,11837.58,10,5014.3,,,Vaginal childbirth (no complications),Inpatient,Emory,3
+Emory Saint Joseph's Hospital,84443,16.8,9,17.22,201.5,201.5,Thyroid test (TSH),Lab,Emory,3
+Emory Saint Joseph's Hospital,85025,7.77,9,7.965,114.0,114.0,Complete blood count (CBC),Lab,Emory,3
+Emory Saint Joseph's Hospital,97110,47.545,4,28.47,180.0,180.0,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Emory,3
+Emory University Hospital,29881,5594.0,9,3380.35,11309.0,11309.0,Knee arthroscopy (meniscus repair),Surgery,Emory,4
+Emory University Hospital,43239,3425.0,9,937.02,3597.0,3597.0,Upper endoscopy with biopsy,Procedures,Emory,4
+Emory University Hospital,45378,3425.0,9,960.75,3649.5,3649.5,Colonoscopy (diagnostic),Procedures,Emory,4
+Emory University Hospital,45380,3425.0,9,1236.27,3732.0,3732.0,Colonoscopy with biopsy,Procedures,Emory,4
+Emory University Hospital,470,35027.875,10,19519.535,,,Hip or knee replacement,Inpatient,Emory,4
+Emory University Hospital,47562,7030.77,9,6245.73,16385.0,16385.0,Gallbladder removal (laparoscopic),Surgery,Emory,4
+Emory University Hospital,49505,5594.0,9,3698.97,8568.0,8568.0,Inguinal hernia repair,Surgery,Emory,4
+Emory University Hospital,66984,4581.0,9,2384.25,10558.0,10558.0,Cataract surgery,Surgery,Emory,4
+Emory University Hospital,70450,383.0,5,107.485,1160.0,1160.0,CT scan of head (no contrast),Imaging,Emory,4
+Emory University Hospital,70551,628.0,5,245.305,2066.5,2066.5,Brain MRI (no contrast),Imaging,Emory,4
+Emory University Hospital,70553,954.63,5,358.68,3431.0,3431.0,Brain MRI (with and without contrast),Imaging,Emory,4
+Emory University Hospital,71046,41.21,9,89.03,260.0,260.0,Chest X-ray (2 views),Imaging,Emory,4
+Emory University Hospital,71250,383.0,5,107.485,1160.0,1160.0,CT scan of chest (no contrast),Imaging,Emory,4
+Emory University Hospital,72148,628.0,5,245.305,2066.5,2066.5,Lower back MRI (no contrast),Imaging,Emory,4
+Emory University Hospital,73721,628.0,5,245.305,2066.5,2066.5,Knee/leg joint MRI (no contrast),Imaging,Emory,4
+Emory University Hospital,74177,711.0,5,358.68,3563.0,3563.0,CT scan of abdomen and pelvis (with contrast),Imaging,Emory,4
+Emory University Hospital,76700,145.0,9,108.01,2352.0,2352.0,Abdominal ultrasound,Imaging,Emory,4
+Emory University Hospital,76805,164.03,9,108.01,983.0,983.0,Pregnancy ultrasound,Imaging,Emory,4
+Emory University Hospital,77067,167.54000000000002,8,,229.5,229.5,Screening mammogram,Imaging,Emory,4
+Emory University Hospital,788,16812.64,10,10771.855,,,C-section birth (no complications),Inpatient,Emory,4
+Emory University Hospital,80053,10.56,9,10.825,287.0,287.0,Comprehensive metabolic panel (blood test),Lab,Emory,4
+Emory University Hospital,80061,13.39,9,13.725,201.0,201.0,Cholesterol (lipid) panel,Lab,Emory,4
+Emory University Hospital,807,11837.58,10,8205.545,,,Vaginal childbirth (no complications),Inpatient,Emory,4
+Emory University Hospital,84443,16.8,9,17.22,201.5,201.5,Thyroid test (TSH),Lab,Emory,4
+Emory University Hospital,85025,7.77,9,7.965,114.0,114.0,Complete blood count (CBC),Lab,Emory,4
+Emory University Hospital,97110,47.545,4,28.47,180.0,180.0,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Emory,4
+Emory University Hospital Midtown,29881,5594.0,9,3423.12,11309.0,11309.0,Knee arthroscopy (meniscus repair),Surgery,Emory,2
+Emory University Hospital Midtown,43239,3425.0,9,948.87,3597.0,3597.0,Upper endoscopy with biopsy,Procedures,Emory,2
+Emory University Hospital Midtown,45378,3425.0,9,972.91,3649.5,3649.5,Colonoscopy (diagnostic),Procedures,Emory,2
+Emory University Hospital Midtown,45380,3425.0,9,1251.91,3732.0,3732.0,Colonoscopy with biopsy,Procedures,Emory,2
+Emory University Hospital Midtown,470,35027.875,10,20231.83,,,Hip or knee replacement,Inpatient,Emory,2
+Emory University Hospital Midtown,47562,7030.77,9,6324.74,16385.0,16385.0,Gallbladder removal (laparoscopic),Surgery,Emory,2
+Emory University Hospital Midtown,49505,5594.0,9,3745.76,8568.0,8568.0,Inguinal hernia repair,Surgery,Emory,2
+Emory University Hospital Midtown,66984,4581.0,9,2414.41,10558.0,10558.0,Cataract surgery,Surgery,Emory,2
+Emory University Hospital Midtown,70450,383.0,5,108.84,1160.0,1160.0,CT scan of head (no contrast),Imaging,Emory,2
+Emory University Hospital Midtown,70551,628.0,5,248.41,2066.5,2066.5,Brain MRI (no contrast),Imaging,Emory,2
+Emory University Hospital Midtown,70553,954.63,5,363.21500000000003,3431.0,3431.0,Brain MRI (with and without contrast),Imaging,Emory,2
+Emory University Hospital Midtown,71046,41.21,9,90.16,260.0,260.0,Chest X-ray (2 views),Imaging,Emory,2
+Emory University Hospital Midtown,71250,383.0,5,108.84,1160.0,1160.0,CT scan of chest (no contrast),Imaging,Emory,2
+Emory University Hospital Midtown,72148,628.0,5,248.41,2066.5,2066.5,Lower back MRI (no contrast),Imaging,Emory,2
+Emory University Hospital Midtown,73721,628.0,5,248.41,2066.5,2066.5,Knee/leg joint MRI (no contrast),Imaging,Emory,2
+Emory University Hospital Midtown,74177,711.0,5,363.21500000000003,3563.0,3563.0,CT scan of abdomen and pelvis (with contrast),Imaging,Emory,2
+Emory University Hospital Midtown,76700,145.0,9,109.37,2352.0,2352.0,Abdominal ultrasound,Imaging,Emory,2
+Emory University Hospital Midtown,76805,164.03,9,109.37,983.0,983.0,Pregnancy ultrasound,Imaging,Emory,2
+Emory University Hospital Midtown,77067,167.54000000000002,8,,229.5,229.5,Screening mammogram,Imaging,Emory,2
+Emory University Hospital Midtown,788,16812.64,10,12312.41,,,C-section birth (no complications),Inpatient,Emory,2
+Emory University Hospital Midtown,80053,10.56,9,10.825,287.0,287.0,Comprehensive metabolic panel (blood test),Lab,Emory,2
+Emory University Hospital Midtown,80061,13.39,9,13.725,201.0,201.0,Cholesterol (lipid) panel,Lab,Emory,2
+Emory University Hospital Midtown,807,11837.58,10,9989.075,,,Vaginal childbirth (no complications),Inpatient,Emory,2
+Emory University Hospital Midtown,84443,16.8,9,17.22,201.5,201.5,Thyroid test (TSH),Lab,Emory,2
+Emory University Hospital Midtown,85025,7.77,9,7.965,114.0,114.0,Complete blood count (CBC),Lab,Emory,2
+Emory University Hospital Midtown,97110,47.545,4,28.47,180.0,180.0,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Emory,2
+Grady Health System,29881,4877.0,11,3228.26,,,Knee arthroscopy (meniscus repair),Surgery,Grady,2
+Grady Health System,43239,2880.0,11,932.83,,,Upper endoscopy with biopsy,Procedures,Grady,2
+Grady Health System,45378,2880.0,11,907.11,,,Colonoscopy (diagnostic),Procedures,Grady,2
+Grady Health System,45380,2880.0,11,1173.14,,,Colonoscopy with biopsy,Procedures,Grady,2
+Grady Health System,47562,7268.0,11,5804.96,,,Gallbladder removal (laparoscopic),Surgery,Grady,2
+Grady Health System,49505,4877.0,11,3511.27,,,Inguinal hernia repair,Surgery,Grady,2
+Grady Health System,66984,4016.0,11,2269.23,,,Cataract surgery,Surgery,Grady,2
+Grady Health System,70450,528.15,9,105.81,4026.0,4026.0,CT scan of head (no contrast),Imaging,Grady,2
+Grady Health System,70551,1116.25,9,240.5,5561.0,5561.0,Brain MRI (no contrast),Imaging,Grady,2
+Grady Health System,70553,1786.43,9,355.33,7610.0,7610.0,Brain MRI (with and without contrast),Imaging,Grady,2
+Grady Health System,71046,185.87,9,87.6,787.0,787.0,Chest X-ray (2 views),Imaging,Grady,2
+Grady Health System,71250,528.15,9,105.81,4341.0,4341.0,CT scan of chest (no contrast),Imaging,Grady,2
+Grady Health System,72148,1116.25,9,240.5,4804.0,4804.0,Lower back MRI (no contrast),Imaging,Grady,2
+Grady Health System,73721,1116.25,9,240.5,5034.7,5034.7,Knee/leg joint MRI (no contrast),Imaging,Grady,2
+Grady Health System,74177,1786.43,9,355.33,10272.0,10272.0,CT scan of abdomen and pelvis (with contrast),Imaging,Grady,2
+Grady Health System,76700,250.18,9,105.81,2181.0,2181.0,Abdominal ultrasound,Imaging,Grady,2
+Grady Health System,76805,250.18,9,105.81,1552.99,1552.99,Pregnancy ultrasound,Imaging,Grady,2
+Grady Health System,77067,224.37,9,89.37,748.65,748.65,Screening mammogram,Imaging,Grady,2
+Grady Health System,80053,12.67,9,10.56,522.925,522.925,Comprehensive metabolic panel (blood test),Lab,Grady,2
+Grady Health System,80061,16.07,9,13.39,293.25,293.25,Cholesterol (lipid) panel,Lab,Grady,2
+Grady Health System,84443,20.16,9,16.8,257.6,257.6,Thyroid test (TSH),Lab,Grady,2
+Grady Health System,85025,9.32,9,7.77,238.45,238.45,Complete blood count (CBC),Lab,Grady,2
+Grady Health System,93306,543.76,2,545.54,5169.25,5169.25,Echocardiogram (heart ultrasound),Imaging,Grady,2
+Grady Health System,97110,107.245,2,28.79,394.875,394.875,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Grady,2
+Grady Health System,99283,1354.65,6,275.49,2779.0,2779.0,ER visit (moderate),Emergency,Grady,2
+Grady Health System,99284,2794.915,6,423.67,4253.0,4253.0,ER visit (serious),Emergency,Grady,2
+Grady Health System,99285,4044.48,6,610.01,6238.0,6238.0,ER visit (severe),Emergency,Grady,2
+Piedmont Atlanta,43239,3426.87,9,,1389.27,4630.91,Upper endoscopy with biopsy,Procedures,Piedmont,4
+Piedmont Atlanta,45380,3432.56,9,,1391.58,4638.6,Colonoscopy with biopsy,Procedures,Piedmont,4
+Piedmont Atlanta,470,36257.535,8,14459.71,30875.44,102918.12,Hip or knee replacement,Inpatient,Piedmont,4
+Piedmont Atlanta,70450,567.0,7,,1082.77,3609.24,CT scan of head (no contrast),Imaging,Piedmont,4
+Piedmont Atlanta,70551,955.0,7,,1343.1,4477.0,Brain MRI (no contrast),Imaging,Piedmont,4
+Piedmont Atlanta,70553,955.0,7,,2202.42,7341.4,Brain MRI (with and without contrast),Imaging,Piedmont,4
+Piedmont Atlanta,71046,96.01,9,,154.8,516.0,Chest X-ray (2 views),Imaging,Piedmont,4
+Piedmont Atlanta,71250,567.0,7,,1004.64,3348.8,CT scan of chest (no contrast),Imaging,Piedmont,4
+Piedmont Atlanta,72148,955.0,7,,1710.72,5702.4,Lower back MRI (no contrast),Imaging,Piedmont,4
+Piedmont Atlanta,73721,955.0,7,,1515.69,5052.3,Knee/leg joint MRI (no contrast),Imaging,Piedmont,4
+Piedmont Atlanta,74177,916.05,7,,2266.42,7554.75,CT scan of abdomen and pelvis (with contrast),Imaging,Piedmont,4
+Piedmont Atlanta,76700,363.58,7,,581.13,1937.1,Abdominal ultrasound,Imaging,Piedmont,4
+Piedmont Atlanta,76805,399.77,7,,542.52,1808.4,Pregnancy ultrasound,Imaging,Piedmont,4
+Piedmont Atlanta,77067,252.0,9,,280.98,936.6,Screening mammogram,Imaging,Piedmont,4
+Piedmont Atlanta,788,14678.0,6,7187.5,12940.83,43136.09,C-section birth (no complications),Inpatient,Piedmont,4
+Piedmont Atlanta,80053,15.05,6,,146.77,489.25,Comprehensive metabolic panel (blood test),Lab,Piedmont,4
+Piedmont Atlanta,80061,21.06,5,,87.11,290.375,Cholesterol (lipid) panel,Lab,Piedmont,4
+Piedmont Atlanta,807,9853.5,6,5054.03,9944.39,33147.97,Vaginal childbirth (no complications),Inpatient,Piedmont,4
+Piedmont Atlanta,84443,26.43,5,,69.275,230.91500000000002,Thyroid test (TSH),Lab,Piedmont,4
+Piedmont Atlanta,85025,14.655000000000001,8,,61.81,206.03,Complete blood count (CBC),Lab,Piedmont,4
+Piedmont Atlanta,93306,3520.09,7,,1552.98,5176.6,Echocardiogram (heart ultrasound),Imaging,Piedmont,4
+Piedmont Atlanta,97110,252.7,9,,75.81,252.7,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Piedmont,4
+Piedmont Atlanta,99283,1765.0,9,,601.335,2004.45,ER visit (moderate),Emergency,Piedmont,4
+Piedmont Atlanta,99284,1833.0,9,,790.9649999999999,2636.55,ER visit (serious),Emergency,Piedmont,4
+Piedmont Atlanta,99285,1833.0,9,,1107.855,3692.85,ER visit (severe),Emergency,Piedmont,4
+Piedmont Eastside,43239,3290.935,10,,1389.27,4630.91,Upper endoscopy with biopsy,Procedures,Piedmont,2
+Piedmont Eastside,45380,3293.7799999999997,10,,1391.58,4638.6,Colonoscopy with biopsy,Procedures,Piedmont,2
+Piedmont Eastside,470,29321.21,9,16654.57,37554.26,125180.87,Hip or knee replacement,Inpatient,Piedmont,2
+Piedmont Eastside,70450,567.0,7,,1082.77,3609.24,CT scan of head (no contrast),Imaging,Piedmont,2
+Piedmont Eastside,70551,955.0,7,,1343.1,4477.0,Brain MRI (no contrast),Imaging,Piedmont,2
+Piedmont Eastside,70553,955.0,7,,2202.42,7341.4,Brain MRI (with and without contrast),Imaging,Piedmont,2
+Piedmont Eastside,71046,85.965,10,,154.8,516.0,Chest X-ray (2 views),Imaging,Piedmont,2
+Piedmont Eastside,71250,567.0,7,,1004.64,3348.8,CT scan of chest (no contrast),Imaging,Piedmont,2
+Piedmont Eastside,72148,955.0,7,,1710.72,5702.4,Lower back MRI (no contrast),Imaging,Piedmont,2
+Piedmont Eastside,73721,955.0,7,,1515.69,5052.3,Knee/leg joint MRI (no contrast),Imaging,Piedmont,2
+Piedmont Eastside,74177,916.05,7,,2266.42,7554.75,CT scan of abdomen and pelvis (with contrast),Imaging,Piedmont,2
+Piedmont Eastside,76700,363.58,7,,581.13,1937.1,Abdominal ultrasound,Imaging,Piedmont,2
+Piedmont Eastside,76805,399.77,7,,542.52,1808.4,Pregnancy ultrasound,Imaging,Piedmont,2
+Piedmont Eastside,77067,236.79000000000002,10,,280.98,936.6,Screening mammogram,Imaging,Piedmont,2
+Piedmont Eastside,788,13473.0,7,9407.12,15671.67,52238.89,C-section birth (no complications),Inpatient,Piedmont,2
+Piedmont Eastside,80053,15.05,6,,146.77,489.25,Comprehensive metabolic panel (blood test),Lab,Piedmont,2
+Piedmont Eastside,80061,19.085,6,,87.11,290.375,Cholesterol (lipid) panel,Lab,Piedmont,2
+Piedmont Eastside,84443,23.945,6,,69.21000000000001,230.7,Thyroid test (TSH),Lab,Piedmont,2
+Piedmont Eastside,85025,11.09,10,,61.81,206.03,Complete blood count (CBC),Lab,Piedmont,2
+Piedmont Eastside,93306,3520.09,7,,1552.98,5176.6,Echocardiogram (heart ultrasound),Imaging,Piedmont,2
+Piedmont Eastside,97110,252.7,10,,75.81,252.7,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Piedmont,2
+Piedmont Eastside,99283,1765.0,10,,629.97,2099.9,ER visit (moderate),Emergency,Piedmont,2
+Piedmont Eastside,99284,1799.0,10,,828.63,2762.1,ER visit (serious),Emergency,Piedmont,2
+Piedmont Eastside,99285,1799.0,10,,1160.61,3868.7,ER visit (severe),Emergency,Piedmont,2
+Piedmont Fayette,43239,3426.87,9,,1389.27,4630.91,Upper endoscopy with biopsy,Procedures,Piedmont,3
+Piedmont Fayette,45380,3432.56,9,,1391.58,4638.6,Colonoscopy with biopsy,Procedures,Piedmont,3
+Piedmont Fayette,470,36251.75,8,16241.355,40778.87,135929.58,Hip or knee replacement,Inpatient,Piedmont,3
+Piedmont Fayette,70450,567.0,7,,1082.77,3609.24,CT scan of head (no contrast),Imaging,Piedmont,3
+Piedmont Fayette,70551,955.0,7,,1343.1,4477.0,Brain MRI (no contrast),Imaging,Piedmont,3
+Piedmont Fayette,70553,955.0,7,,2202.42,7341.4,Brain MRI (with and without contrast),Imaging,Piedmont,3
+Piedmont Fayette,71046,96.01,9,,154.8,516.0,Chest X-ray (2 views),Imaging,Piedmont,3
+Piedmont Fayette,71250,567.0,7,,1004.64,3348.8,CT scan of chest (no contrast),Imaging,Piedmont,3
+Piedmont Fayette,72148,955.0,7,,1710.72,5702.4,Lower back MRI (no contrast),Imaging,Piedmont,3
+Piedmont Fayette,73721,955.0,7,,1515.69,5052.3,Knee/leg joint MRI (no contrast),Imaging,Piedmont,3
+Piedmont Fayette,74177,916.05,7,,2266.42,7554.75,CT scan of abdomen and pelvis (with contrast),Imaging,Piedmont,3
+Piedmont Fayette,76700,363.58,7,,581.13,1937.1,Abdominal ultrasound,Imaging,Piedmont,3
+Piedmont Fayette,76805,399.77,7,,542.52,1808.4,Pregnancy ultrasound,Imaging,Piedmont,3
+Piedmont Fayette,77067,252.0,9,,280.98,936.6,Screening mammogram,Imaging,Piedmont,3
+Piedmont Fayette,80053,15.05,6,,146.77,489.25,Comprehensive metabolic panel (blood test),Lab,Piedmont,3
+Piedmont Fayette,80061,19.085,6,,87.11,290.375,Cholesterol (lipid) panel,Lab,Piedmont,3
+Piedmont Fayette,807,9853.5,6,6787.74,8023.79,26745.97,Vaginal childbirth (no complications),Inpatient,Piedmont,3
+Piedmont Fayette,84443,23.945,6,,69.275,230.91500000000002,Thyroid test (TSH),Lab,Piedmont,3
+Piedmont Fayette,85025,12.22,9,,61.81,206.03,Complete blood count (CBC),Lab,Piedmont,3
+Piedmont Fayette,93306,3520.09,7,,1552.98,5176.6,Echocardiogram (heart ultrasound),Imaging,Piedmont,3
+Piedmont Fayette,97110,252.7,9,,75.81,252.7,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Piedmont,3
+Piedmont Fayette,99283,1765.0,9,,601.335,2004.45,ER visit (moderate),Emergency,Piedmont,3
+Piedmont Fayette,99284,1833.0,9,,790.9649999999999,2636.55,ER visit (serious),Emergency,Piedmont,3
+Piedmont Fayette,99285,1833.0,9,,1107.855,3692.85,ER visit (severe),Emergency,Piedmont,3
+Piedmont Henry,43239,3426.87,9,,1389.27,4630.91,Upper endoscopy with biopsy,Procedures,Piedmont,2
+Piedmont Henry,45380,3432.56,9,,1391.58,4638.6,Colonoscopy with biopsy,Procedures,Piedmont,2
+Piedmont Henry,470,36251.75,8,16939.045,37815.34,126051.13,Hip or knee replacement,Inpatient,Piedmont,2
+Piedmont Henry,70450,567.0,7,,1082.77,3609.24,CT scan of head (no contrast),Imaging,Piedmont,2
+Piedmont Henry,70551,955.0,7,,1343.1,4477.0,Brain MRI (no contrast),Imaging,Piedmont,2
+Piedmont Henry,70553,955.0,7,,2202.42,7341.4,Brain MRI (with and without contrast),Imaging,Piedmont,2
+Piedmont Henry,71046,96.01,9,,154.8,516.0,Chest X-ray (2 views),Imaging,Piedmont,2
+Piedmont Henry,71250,567.0,7,,1004.64,3348.8,CT scan of chest (no contrast),Imaging,Piedmont,2
+Piedmont Henry,72148,955.0,7,,1710.72,5702.4,Lower back MRI (no contrast),Imaging,Piedmont,2
+Piedmont Henry,73721,955.0,7,,1515.69,5052.3,Knee/leg joint MRI (no contrast),Imaging,Piedmont,2
+Piedmont Henry,74177,916.05,7,,2266.42,7554.75,CT scan of abdomen and pelvis (with contrast),Imaging,Piedmont,2
+Piedmont Henry,76700,363.58,7,,581.13,1937.1,Abdominal ultrasound,Imaging,Piedmont,2
+Piedmont Henry,76805,399.77,7,,542.52,1808.4,Pregnancy ultrasound,Imaging,Piedmont,2
+Piedmont Henry,77067,252.0,9,,280.98,936.6,Screening mammogram,Imaging,Piedmont,2
+Piedmont Henry,788,14678.0,6,9592.404999999999,14204.88,47349.59,C-section birth (no complications),Inpatient,Piedmont,2
+Piedmont Henry,80053,15.05,6,,146.77,489.25,Comprehensive metabolic panel (blood test),Lab,Piedmont,2
+Piedmont Henry,80061,19.085,6,,87.11,290.375,Cholesterol (lipid) panel,Lab,Piedmont,2
+Piedmont Henry,807,9853.5,6,7437.12,9503.48,31678.27,Vaginal childbirth (no complications),Inpatient,Piedmont,2
+Piedmont Henry,84443,23.945,6,,69.275,230.91500000000002,Thyroid test (TSH),Lab,Piedmont,2
+Piedmont Henry,85025,12.22,9,,61.81,206.03,Complete blood count (CBC),Lab,Piedmont,2
+Piedmont Henry,93306,3520.09,7,,1552.98,5176.6,Echocardiogram (heart ultrasound),Imaging,Piedmont,2
+Piedmont Henry,97110,252.7,9,,75.81,252.7,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Piedmont,2
+Piedmont Henry,99283,1765.0,9,,601.335,2004.45,ER visit (moderate),Emergency,Piedmont,2
+Piedmont Henry,99284,1833.0,9,,790.9649999999999,2636.55,ER visit (serious),Emergency,Piedmont,2
+Piedmont Henry,99285,1833.0,9,,1107.855,3692.85,ER visit (severe),Emergency,Piedmont,2
+Piedmont Newnan,43239,3287.0,9,,1389.27,4630.91,Upper endoscopy with biopsy,Procedures,Piedmont,4
+Piedmont Newnan,45380,3287.0,9,,1391.58,4638.6,Colonoscopy with biopsy,Procedures,Piedmont,4
+Piedmont Newnan,470,37029.095,8,16486.67,39071.81,130239.36,Hip or knee replacement,Inpatient,Piedmont,4
+Piedmont Newnan,70450,567.0,7,,1082.77,3609.24,CT scan of head (no contrast),Imaging,Piedmont,4
+Piedmont Newnan,70551,955.0,7,,1343.1,4477.0,Brain MRI (no contrast),Imaging,Piedmont,4
+Piedmont Newnan,70553,955.0,7,,2202.42,7341.4,Brain MRI (with and without contrast),Imaging,Piedmont,4
+Piedmont Newnan,71046,85.7,9,,154.8,516.0,Chest X-ray (2 views),Imaging,Piedmont,4
+Piedmont Newnan,71250,567.0,7,,1004.64,3348.8,CT scan of chest (no contrast),Imaging,Piedmont,4
+Piedmont Newnan,72148,955.0,7,,1710.72,5702.4,Lower back MRI (no contrast),Imaging,Piedmont,4
+Piedmont Newnan,73721,955.0,7,,1515.69,5052.3,Knee/leg joint MRI (no contrast),Imaging,Piedmont,4
+Piedmont Newnan,74177,916.05,7,,2266.42,7554.75,CT scan of abdomen and pelvis (with contrast),Imaging,Piedmont,4
+Piedmont Newnan,76700,324.04,7,,581.13,1937.1,Abdominal ultrasound,Imaging,Piedmont,4
+Piedmont Newnan,76805,356.29,7,,542.52,1808.4,Pregnancy ultrasound,Imaging,Piedmont,4
+Piedmont Newnan,77067,252.0,9,,280.98,936.6,Screening mammogram,Imaging,Piedmont,4
+Piedmont Newnan,80053,15.05,6,,146.77,489.25,Comprehensive metabolic panel (blood test),Lab,Piedmont,4
+Piedmont Newnan,80061,19.085,6,,87.11,290.375,Cholesterol (lipid) panel,Lab,Piedmont,4
+Piedmont Newnan,84443,23.945,6,,69.275,230.91500000000002,Thyroid test (TSH),Lab,Piedmont,4
+Piedmont Newnan,85025,12.22,9,,61.81,206.03,Complete blood count (CBC),Lab,Piedmont,4
+Piedmont Newnan,93306,3520.09,7,,1552.98,5176.6,Echocardiogram (heart ultrasound),Imaging,Piedmont,4
+Piedmont Newnan,97110,252.7,9,,75.81,252.7,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Piedmont,4
+Piedmont Newnan,99283,1765.0,9,,601.335,2004.45,ER visit (moderate),Emergency,Piedmont,4
+Piedmont Newnan,99284,1833.0,9,,790.9649999999999,2636.55,ER visit (serious),Emergency,Piedmont,4
+Piedmont Newnan,99285,1833.0,9,,1107.855,3692.85,ER visit (severe),Emergency,Piedmont,4
+Piedmont Rockdale,43239,3354.0,9,,1389.27,4630.91,Upper endoscopy with biopsy,Procedures,Piedmont,3
+Piedmont Rockdale,45380,3354.0,9,,1391.58,4638.6,Colonoscopy with biopsy,Procedures,Piedmont,3
+Piedmont Rockdale,470,36075.445,8,17736.88,41628.15,138760.51,Hip or knee replacement,Inpatient,Piedmont,3
+Piedmont Rockdale,70450,567.0,7,,1082.77,3609.24,CT scan of head (no contrast),Imaging,Piedmont,3
+Piedmont Rockdale,70551,955.0,7,,1343.1,4477.0,Brain MRI (no contrast),Imaging,Piedmont,3
+Piedmont Rockdale,70553,955.0,7,,2202.42,7341.4,Brain MRI (with and without contrast),Imaging,Piedmont,3
+Piedmont Rockdale,71046,103.04,9,,154.8,516.0,Chest X-ray (2 views),Imaging,Piedmont,3
+Piedmont Rockdale,71250,567.0,7,,1004.64,3348.8,CT scan of chest (no contrast),Imaging,Piedmont,3
+Piedmont Rockdale,72148,955.0,7,,1710.72,5702.4,Lower back MRI (no contrast),Imaging,Piedmont,3
+Piedmont Rockdale,73721,955.0,7,,1515.69,5052.3,Knee/leg joint MRI (no contrast),Imaging,Piedmont,3
+Piedmont Rockdale,74177,916.05,7,,2266.42,7554.75,CT scan of abdomen and pelvis (with contrast),Imaging,Piedmont,3
+Piedmont Rockdale,76700,390.21,7,,581.13,1937.1,Abdominal ultrasound,Imaging,Piedmont,3
+Piedmont Rockdale,76805,426.0,7,,542.52,1808.4,Pregnancy ultrasound,Imaging,Piedmont,3
+Piedmont Rockdale,77067,252.0,9,,280.98,936.6,Screening mammogram,Imaging,Piedmont,3
+Piedmont Rockdale,80053,15.05,6,,146.77,489.25,Comprehensive metabolic panel (blood test),Lab,Piedmont,3
+Piedmont Rockdale,80061,19.085,6,,87.11,290.375,Cholesterol (lipid) panel,Lab,Piedmont,3
+Piedmont Rockdale,84443,23.945,6,,69.275,230.91500000000002,Thyroid test (TSH),Lab,Piedmont,3
+Piedmont Rockdale,85025,12.22,9,,61.81,206.03,Complete blood count (CBC),Lab,Piedmont,3
+Piedmont Rockdale,93306,3520.09,7,,1552.98,5176.6,Echocardiogram (heart ultrasound),Imaging,Piedmont,3
+Piedmont Rockdale,97110,252.7,9,,75.81,252.7,"Physical therapy (therapeutic exercise, 15 min)",Therapy,Piedmont,3
+Piedmont Rockdale,99283,1864.43,9,,601.335,2004.45,ER visit (moderate),Emergency,Piedmont,3
+Piedmont Rockdale,99284,1893.0,9,,790.9649999999999,2636.55,ER visit (serious),Emergency,Piedmont,3
+Piedmont Rockdale,99285,1893.0,9,,1107.855,3692.85,ER visit (severe),Emergency,Piedmont,3
+Wellstar Cobb Hospital,29881,8448.0,5,3439.735,,,Knee arthroscopy (meniscus repair),Surgery,Wellstar,3
+Wellstar Cobb Hospital,43239,3592.27,5,953.48,1405.56,3604.0,Upper endoscopy with biopsy,Procedures,Wellstar,3
+Wellstar Cobb Hospital,45378,3683.25,5,977.63,,,Colonoscopy (diagnostic),Procedures,Wellstar,3
+Wellstar Cobb Hospital,45380,4714.0,5,1257.9850000000001,,,Colonoscopy with biopsy,Procedures,Wellstar,3
+Wellstar Cobb Hospital,470,55510.065,8,20928.81,,,Hip or knee replacement,Inpatient,Wellstar,3
+Wellstar Cobb Hospital,47562,19038.605,4,6355.4400000000005,,,Gallbladder removal (laparoscopic),Surgery,Wellstar,3
+Wellstar Cobb Hospital,49505,8448.0,5,3763.9399999999996,,,Inguinal hernia repair,Surgery,Wellstar,3
+Wellstar Cobb Hospital,66984,8057.0,5,2426.13,,,Cataract surgery,Surgery,Wellstar,3
+Wellstar Cobb Hospital,70450,265.1,5,109.905,1418.82,3638.0,CT scan of head (no contrast),Imaging,Wellstar,3
+Wellstar Cobb Hospital,70551,861.95,5,250.83499999999998,1825.59,4681.0,Brain MRI (no contrast),Imaging,Wellstar,3
+Wellstar Cobb Hospital,70553,1079.27,5,366.755,2393.04,6136.0,Brain MRI (with and without contrast),Imaging,Wellstar,3
+Wellstar Cobb Hospital,71046,79.235,6,91.485,294.06,754.0,Chest X-ray (2 views),Imaging,Wellstar,3
+Wellstar Cobb Hospital,71250,343.51,5,109.905,1540.5,3950.0,CT scan of chest (no contrast),Imaging,Wellstar,3
+Wellstar Cobb Hospital,72148,730.45,5,250.83499999999998,1775.67,4553.0,Lower back MRI (no contrast),Imaging,Wellstar,3
+Wellstar Cobb Hospital,73721,507.52,5,250.83499999999998,1549.08,3972.0,Knee/leg joint MRI (no contrast),Imaging,Wellstar,3
+Wellstar Cobb Hospital,74177,548.78,5,366.755,2737.8,7020.0,CT scan of abdomen and pelvis (with contrast),Imaging,Wellstar,3
+Wellstar Cobb Hospital,76700,197.41,6,109.905,732.03,1877.0,Abdominal ultrasound,Imaging,Wellstar,3
+Wellstar Cobb Hospital,76805,214.07,6,109.905,572.13,1467.0,Pregnancy ultrasound,Imaging,Wellstar,3
+Wellstar Cobb Hospital,77067,179.26999999999998,4,,331.5,850.0,Screening mammogram,Imaging,Wellstar,3
+Wellstar Cobb Hospital,788,26643.655,8,13171.98,,,C-section birth (no complications),Inpatient,Wellstar,3
+Wellstar Cobb Hospital,80053,32.68,7,10.93,105.3,270.0,Comprehensive metabolic panel (blood test),Lab,Wellstar,3
+Wellstar Cobb Hospital,80061,49.14,7,13.86,97.395,249.725,Cholesterol (lipid) panel,Lab,Wellstar,3
+Wellstar Cobb Hospital,807,18759.485,8,10896.34,,,Vaginal childbirth (no complications),Inpatient,Wellstar,3
+Wellstar Cobb Hospital,84443,52.29,7,17.39,117.56,301.44,Thyroid test (TSH),Lab,Wellstar,3
+Wellstar Cobb Hospital,85025,24.51,7,8.045,65.13,167.0,Complete blood count (CBC),Lab,Wellstar,3
+Wellstar Cobb Hospital,93306,2123.81,2,574.425,1065.09,2731.0,Echocardiogram (heart ultrasound),Imaging,Wellstar,3
+Wellstar Cobb Hospital,99283,1061.01,2,286.97,643.5,1650.0,ER visit (moderate),Emergency,Wellstar,3
+Wellstar Cobb Hospital,99284,1621.815,2,438.655,875.16,2244.0,ER visit (serious),Emergency,Wellstar,3
+Wellstar Cobb Hospital,99285,2314.71,2,626.06,3113.76,7984.0,ER visit (severe),Emergency,Wellstar,3
+Wellstar Douglas Hospital,29881,8448.0,5,3408.8050000000003,,,Knee arthroscopy (meniscus repair),Surgery,Wellstar,3
+Wellstar Douglas Hospital,43239,3467.13,5,944.905,1405.56,3604.0,Upper endoscopy with biopsy,Procedures,Wellstar,3
+Wellstar Douglas Hospital,45378,3554.95,5,968.8399999999999,,,Colonoscopy (diagnostic),Procedures,Wellstar,3
+Wellstar Douglas Hospital,45380,4574.4,5,1246.675,,,Colonoscopy with biopsy,Procedures,Wellstar,3
+Wellstar Douglas Hospital,470,55510.065,8,19483.86,,,Hip or knee replacement,Inpatient,Wellstar,3
+Wellstar Douglas Hospital,47562,16633.45,4,6298.29,,,Gallbladder removal (laparoscopic),Surgery,Wellstar,3
+Wellstar Douglas Hospital,49505,8448.0,5,3730.1,,,Inguinal hernia repair,Surgery,Wellstar,3
+Wellstar Douglas Hospital,66984,6963.29,5,2404.3149999999996,,,Cataract surgery,Surgery,Wellstar,3
+Wellstar Douglas Hospital,70450,265.1,5,108.92,1418.82,3638.0,CT scan of head (no contrast),Imaging,Wellstar,3
+Wellstar Douglas Hospital,70551,719.92,5,248.57999999999998,1825.59,4681.0,Brain MRI (no contrast),Imaging,Wellstar,3
+Wellstar Douglas Hospital,70553,1052.64,5,363.46000000000004,2393.04,6136.0,Brain MRI (with and without contrast),Imaging,Wellstar,3
+Wellstar Douglas Hospital,71046,79.235,6,90.66499999999999,294.06,754.0,Chest X-ray (2 views),Imaging,Wellstar,3
+Wellstar Douglas Hospital,71250,315.44,5,108.92,1540.5,3950.0,CT scan of chest (no contrast),Imaging,Wellstar,3
+Wellstar Douglas Hospital,72148,719.92,5,248.57999999999998,1775.67,4553.0,Lower back MRI (no contrast),Imaging,Wellstar,3
+Wellstar Douglas Hospital,73721,507.52,5,248.57999999999998,1549.08,3972.0,Knee/leg joint MRI (no contrast),Imaging,Wellstar,3
+Wellstar Douglas Hospital,74177,548.78,5,363.46000000000004,2737.8,7020.0,CT scan of abdomen and pelvis (with contrast),Imaging,Wellstar,3
+Wellstar Douglas Hospital,76700,197.41,6,108.92,732.03,1877.0,Abdominal ultrasound,Imaging,Wellstar,3
+Wellstar Douglas Hospital,76805,214.07,6,108.92,572.13,1467.0,Pregnancy ultrasound,Imaging,Wellstar,3
+Wellstar Douglas Hospital,77067,179.26999999999998,4,,331.5,850.0,Screening mammogram,Imaging,Wellstar,3
+Wellstar Douglas Hospital,788,26643.655,8,11701.27,,,C-section birth (no complications),Inpatient,Wellstar,3
+Wellstar Douglas Hospital,80053,32.68,6,10.93,105.3,270.0,Comprehensive metabolic panel (blood test),Lab,Wellstar,3
+Wellstar Douglas Hospital,80061,47.735,6,13.86,97.395,249.725,Cholesterol (lipid) panel,Lab,Wellstar,3
+Wellstar Douglas Hospital,807,18759.485,8,9418.08,,,Vaginal childbirth (no complications),Inpatient,Wellstar,3
+Wellstar Douglas Hospital,84443,52.29,6,17.39,117.56,301.44,Thyroid test (TSH),Lab,Wellstar,3
+Wellstar Douglas Hospital,85025,24.51,6,8.045,65.13,167.0,Complete blood count (CBC),Lab,Wellstar,3
+Wellstar Douglas Hospital,93306,1868.7250000000001,2,569.26,1065.09,2731.0,Echocardiogram (heart ultrasound),Imaging,Wellstar,3
+Wellstar Douglas Hospital,99283,933.575,2,284.39,643.5,1650.0,ER visit (moderate),Emergency,Wellstar,3
+Wellstar Douglas Hospital,99284,1427.03,2,434.71000000000004,875.16,2244.0,ER visit (serious),Emergency,Wellstar,3
+Wellstar Douglas Hospital,99285,2036.705,2,620.4300000000001,3113.76,7984.0,ER visit (severe),Emergency,Wellstar,3
+Wellstar Kennestone Hospital,29881,8448.0,5,3439.735,,,Knee arthroscopy (meniscus repair),Surgery,Wellstar,4
+Wellstar Kennestone Hospital,43239,3458.28,5,953.48,1405.56,3604.0,Upper endoscopy with biopsy,Procedures,Wellstar,4
+Wellstar Kennestone Hospital,45378,3545.87,5,977.63,,,Colonoscopy (diagnostic),Procedures,Wellstar,4
+Wellstar Kennestone Hospital,45380,4562.72,5,1257.9850000000001,,,Colonoscopy with biopsy,Procedures,Wellstar,4
+Wellstar Kennestone Hospital,470,55510.065,8,21056.13,,,Hip or knee replacement,Inpatient,Wellstar,4
+Wellstar Kennestone Hospital,47562,16610.15,4,6355.4400000000005,,,Gallbladder removal (laparoscopic),Surgery,Wellstar,4
+Wellstar Kennestone Hospital,49505,8448.0,5,3763.9399999999996,,,Inguinal hernia repair,Surgery,Wellstar,4
+Wellstar Kennestone Hospital,66984,6945.51,5,2426.13,,,Cataract surgery,Surgery,Wellstar,4
+Wellstar Kennestone Hospital,70450,265.1,5,109.905,1418.82,3638.0,CT scan of head (no contrast),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,70551,718.08,5,250.83499999999998,1825.59,4681.0,Brain MRI (no contrast),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,70553,1049.95,5,366.755,2393.04,6136.0,Brain MRI (with and without contrast),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,71046,79.235,6,91.485,294.06,754.0,Chest X-ray (2 views),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,71250,314.63,5,109.905,1540.5,3950.0,CT scan of chest (no contrast),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,72148,718.08,5,250.83499999999998,1775.67,4553.0,Lower back MRI (no contrast),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,73721,507.52,5,250.83499999999998,1549.08,3972.0,Knee/leg joint MRI (no contrast),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,74177,548.78,5,366.755,2737.8,7020.0,CT scan of abdomen and pelvis (with contrast),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,76700,197.41,6,109.905,732.03,1877.0,Abdominal ultrasound,Imaging,Wellstar,4
+Wellstar Kennestone Hospital,76805,214.07,6,109.905,572.13,1467.0,Pregnancy ultrasound,Imaging,Wellstar,4
+Wellstar Kennestone Hospital,77067,179.26999999999998,4,,331.5,850.0,Screening mammogram,Imaging,Wellstar,4
+Wellstar Kennestone Hospital,788,26643.655,8,12565.19,,,C-section birth (no complications),Inpatient,Wellstar,4
+Wellstar Kennestone Hospital,80053,32.68,6,10.93,105.3,270.0,Comprehensive metabolic panel (blood test),Lab,Wellstar,4
+Wellstar Kennestone Hospital,80061,47.735,6,13.86,97.395,249.725,Cholesterol (lipid) panel,Lab,Wellstar,4
+Wellstar Kennestone Hospital,807,18759.485,8,10074.18,,,Vaginal childbirth (no complications),Inpatient,Wellstar,4
+Wellstar Kennestone Hospital,84443,52.29,6,17.39,117.56,301.44,Thyroid test (TSH),Lab,Wellstar,4
+Wellstar Kennestone Hospital,85025,24.51,6,8.045,65.13,167.0,Complete blood count (CBC),Lab,Wellstar,4
+Wellstar Kennestone Hospital,93306,1863.955,2,574.425,1065.09,2731.0,Echocardiogram (heart ultrasound),Imaging,Wellstar,4
+Wellstar Kennestone Hospital,99283,931.1949999999999,2,286.97,643.5,1650.0,ER visit (moderate),Emergency,Wellstar,4
+Wellstar Kennestone Hospital,99284,1423.38,2,438.655,875.16,2244.0,ER visit (serious),Emergency,Wellstar,4
+Wellstar Kennestone Hospital,99285,2031.5,2,626.06,3113.76,7984.0,ER visit (severe),Emergency,Wellstar,4
+Wellstar North Fulton Hospital,29881,8448.0,5,3439.735,,,Knee arthroscopy (meniscus repair),Surgery,Wellstar,2
+Wellstar North Fulton Hospital,43239,3510.83,5,953.48,1405.56,3604.0,Upper endoscopy with biopsy,Procedures,Wellstar,2
+Wellstar North Fulton Hospital,45378,3599.75,5,977.63,,,Colonoscopy (diagnostic),Procedures,Wellstar,2
+Wellstar North Fulton Hospital,45380,4632.05,5,1257.9850000000001,,,Colonoscopy with biopsy,Procedures,Wellstar,2
+Wellstar North Fulton Hospital,470,55510.065,8,14855.86,,,Hip or knee replacement,Inpatient,Wellstar,2
+Wellstar North Fulton Hospital,47562,16748.4,4,6355.4400000000005,,,Gallbladder removal (laparoscopic),Surgery,Wellstar,2
+Wellstar North Fulton Hospital,49505,8448.0,5,3763.9399999999996,,,Inguinal hernia repair,Surgery,Wellstar,2
+Wellstar North Fulton Hospital,66984,7051.05,5,2426.13,,,Cataract surgery,Surgery,Wellstar,2
+Wellstar North Fulton Hospital,70450,265.1,5,109.905,1418.82,3638.0,CT scan of head (no contrast),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,70551,729.0,5,250.83499999999998,1825.59,4681.0,Brain MRI (no contrast),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,70553,1065.91,5,366.755,2393.04,6136.0,Brain MRI (with and without contrast),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,71046,79.235,6,91.485,294.06,754.0,Chest X-ray (2 views),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,71250,319.42,5,109.905,1540.5,3950.0,CT scan of chest (no contrast),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,72148,729.0,5,250.83499999999998,1775.67,4553.0,Lower back MRI (no contrast),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,73721,507.52,5,250.83499999999998,1549.08,3972.0,Knee/leg joint MRI (no contrast),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,74177,548.78,5,366.755,2737.8,7020.0,CT scan of abdomen and pelvis (with contrast),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,76700,197.41,6,109.905,732.03,1877.0,Abdominal ultrasound,Imaging,Wellstar,2
+Wellstar North Fulton Hospital,76805,214.07,6,109.905,572.13,1467.0,Pregnancy ultrasound,Imaging,Wellstar,2
+Wellstar North Fulton Hospital,77067,179.26999999999998,4,,331.5,850.0,Screening mammogram,Imaging,Wellstar,2
+Wellstar North Fulton Hospital,788,26643.655,8,7384.42,,,C-section birth (no complications),Inpatient,Wellstar,2
+Wellstar North Fulton Hospital,80053,32.68,6,10.93,105.3,270.0,Comprehensive metabolic panel (blood test),Lab,Wellstar,2
+Wellstar North Fulton Hospital,80061,47.735,6,13.86,97.395,249.725,Cholesterol (lipid) panel,Lab,Wellstar,2
+Wellstar North Fulton Hospital,807,18759.485,8,5192.5,,,Vaginal childbirth (no complications),Inpatient,Wellstar,2
+Wellstar North Fulton Hospital,84443,52.29,6,17.39,117.56,301.44,Thyroid test (TSH),Lab,Wellstar,2
+Wellstar North Fulton Hospital,85025,24.51,6,8.045,65.13,167.0,Complete blood count (CBC),Lab,Wellstar,2
+Wellstar North Fulton Hospital,93306,1892.2800000000002,2,574.425,1065.09,2731.0,Echocardiogram (heart ultrasound),Imaging,Wellstar,2
+Wellstar North Fulton Hospital,99283,945.34,2,286.97,643.5,1650.0,ER visit (moderate),Emergency,Wellstar,2
+Wellstar North Fulton Hospital,99284,1445.01,2,438.655,875.16,2244.0,ER visit (serious),Emergency,Wellstar,2
+Wellstar North Fulton Hospital,99285,2062.375,2,626.06,3113.76,7984.0,ER visit (severe),Emergency,Wellstar,2
+Wellstar Paulding Hospital,29881,8448.0,5,3439.735,,,Knee arthroscopy (meniscus repair),Surgery,Wellstar,4
+Wellstar Paulding Hospital,43239,3458.28,5,953.48,1405.56,3604.0,Upper endoscopy with biopsy,Procedures,Wellstar,4
+Wellstar Paulding Hospital,45378,3545.87,5,977.63,,,Colonoscopy (diagnostic),Procedures,Wellstar,4
+Wellstar Paulding Hospital,45380,4562.72,5,1257.9850000000001,,,Colonoscopy with biopsy,Procedures,Wellstar,4
+Wellstar Paulding Hospital,470,55510.065,8,14748.59,,,Hip or knee replacement,Inpatient,Wellstar,4
+Wellstar Paulding Hospital,47562,16610.15,4,6355.4400000000005,,,Gallbladder removal (laparoscopic),Surgery,Wellstar,4
+Wellstar Paulding Hospital,49505,8448.0,5,3763.9399999999996,,,Inguinal hernia repair,Surgery,Wellstar,4
+Wellstar Paulding Hospital,66984,6945.51,5,2426.13,,,Cataract surgery,Surgery,Wellstar,4
+Wellstar Paulding Hospital,70450,265.1,5,109.905,1418.82,3638.0,CT scan of head (no contrast),Imaging,Wellstar,4
+Wellstar Paulding Hospital,70551,718.08,5,250.83499999999998,1825.59,4681.0,Brain MRI (no contrast),Imaging,Wellstar,4
+Wellstar Paulding Hospital,70553,1049.95,5,366.755,2393.04,6136.0,Brain MRI (with and without contrast),Imaging,Wellstar,4
+Wellstar Paulding Hospital,71046,79.235,6,91.485,294.06,754.0,Chest X-ray (2 views),Imaging,Wellstar,4
+Wellstar Paulding Hospital,71250,314.63,5,109.905,1540.5,3950.0,CT scan of chest (no contrast),Imaging,Wellstar,4
+Wellstar Paulding Hospital,72148,718.08,5,250.83499999999998,1775.67,4553.0,Lower back MRI (no contrast),Imaging,Wellstar,4
+Wellstar Paulding Hospital,73721,507.52,5,250.83499999999998,1549.08,3972.0,Knee/leg joint MRI (no contrast),Imaging,Wellstar,4
+Wellstar Paulding Hospital,74177,548.78,5,366.755,2737.8,7020.0,CT scan of abdomen and pelvis (with contrast),Imaging,Wellstar,4
+Wellstar Paulding Hospital,76700,197.41,6,109.905,732.03,1877.0,Abdominal ultrasound,Imaging,Wellstar,4
+Wellstar Paulding Hospital,76805,214.07,6,109.905,572.13,1467.0,Pregnancy ultrasound,Imaging,Wellstar,4
+Wellstar Paulding Hospital,77067,179.26999999999998,4,,331.5,850.0,Screening mammogram,Imaging,Wellstar,4
+Wellstar Paulding Hospital,788,26643.655,8,7331.1,,,C-section birth (no complications),Inpatient,Wellstar,4
+Wellstar Paulding Hospital,80053,32.68,6,10.93,105.3,270.0,Comprehensive metabolic panel (blood test),Lab,Wellstar,4
+Wellstar Paulding Hospital,80061,47.735,6,13.86,97.395,249.725,Cholesterol (lipid) panel,Lab,Wellstar,4
+Wellstar Paulding Hospital,807,18759.485,8,5155.02,,,Vaginal childbirth (no complications),Inpatient,Wellstar,4
+Wellstar Paulding Hospital,84443,52.29,6,17.39,117.56,301.44,Thyroid test (TSH),Lab,Wellstar,4
+Wellstar Paulding Hospital,85025,24.51,6,8.045,65.13,167.0,Complete blood count (CBC),Lab,Wellstar,4
+Wellstar Paulding Hospital,93306,1863.955,2,574.425,1065.09,2731.0,Echocardiogram (heart ultrasound),Imaging,Wellstar,4
+Wellstar Paulding Hospital,99283,931.1949999999999,2,286.97,643.5,1650.0,ER visit (moderate),Emergency,Wellstar,4
+Wellstar Paulding Hospital,99284,1423.38,2,438.655,875.16,2244.0,ER visit (serious),Emergency,Wellstar,4
+Wellstar Paulding Hospital,99285,2031.5,2,626.06,3113.76,7984.0,ER visit (severe),Emergency,Wellstar,4

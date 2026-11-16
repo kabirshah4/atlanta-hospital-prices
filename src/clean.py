@@ -76,13 +76,16 @@ def main():
     s = d.setting.str.lower()
     d = d[(is_drg & s.isin(["inpatient", "both"])) | (~is_drg & s.isin(["outpatient", "both"]))]
     d = d[d.code != "93000"]  # only one hospital lists it
+    # Prefer the hospital's direct fee for the procedure code; use line items that only carry the
+    # code as a secondary code when the hospital publishes no direct fee for it.
+    has_direct = d.groupby(["hospital", "code"]).direct.transform("any")
     print(f"rows kept after like-for-like filters: {len(d)} of {n0}")
 
     d["brand"] = d.payer.map(brand)
     d["plan_type"] = [plan_type(p, q, b) for p, q, b in zip(d.payer, d.plan, d.brand)]
     d["system"] = d.hospital.map(system_of)
 
-    neg = d[d.negotiated > 1]
+    neg = d[(d.direct | ~has_direct) & (d.negotiated > 1)]
     prices = (neg.groupby(["hospital", "system", "code", "brand", "plan_type", "payer", "plan"], dropna=False)
                  .negotiated.median().reset_index(name="price"))
 
