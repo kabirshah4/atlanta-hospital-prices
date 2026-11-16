@@ -1,66 +1,77 @@
-"""Visual system: light, quiet, Apple-like; a touch of Cluely's soft sky wash.
-
-Apple light UI: #FBFBFD canvas, #1D1D1F text, #0071E3 blue, system font (SF on Apple devices),
-white cards with hairline borders and soft shadows, segmented control for tabs.
+"""Visual system, after cluely.com: sky-blue gradient hero with a serif headline (EB Garamond),
+Geist for everything else, a glossy blue feature card, soft lavender-gray cards, and Apple
+system colors for price meaning (green = cheaper, red = pricier).
 """
 import plotly.graph_objects as go
 import plotly.io as pio
 
 # --- tokens ---------------------------------------------------------------
-BG = "#FBFBFD"
-CARD = "#FFFFFF"
-TEXT = "#1D1D1F"
-TEXT_2 = "#515154"
-TEXT_3 = "#86868B"
-LINE = "#E5E5EA"
-BLUE = "#0071E3"
-GREEN = "#248A3D"       # Apple green, darkened for text contrast on white
-RED = "#D70015"         # Apple red, darkened for text contrast on white
-DOT_GREEN = "#34C759"   # chart marks
+BG = "#FFFFFF"
+SOFT = "#F1F3F8"        # Cluely's lavender-gray card
+SOFT_2 = "#E9ECF4"
+TEXT = "#1A1B20"
+TEXT_2 = "#4B4F5C"
+TEXT_3 = "#8A8F9E"
+LINE = "#E3E6EE"
+BLUE = "#2F6BEA"        # Cluely button blue
+BLUE_SOFT = "#6C95F2"
+GREEN = "#1F8A3B"       # text-safe green on light
+RED = "#D21F2B"         # text-safe red on light
+DOT_GREEN = "#34C759"
 DOT_RED = "#FF3B30"
 PRICE_SCALE = [[0, "#34C759"], [0.5, "#FFCC00"], [1, "#FF3B30"]]
-SYSTEM_COLORS = {"Emory": "#0071E3", "Piedmont": "#AF52DE", "Wellstar": "#30B0C7", "Grady": "#FF9500"}
-FONT = ("-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', Inter, 'Helvetica Neue', "
-        "Helvetica, Arial, sans-serif")
+SYSTEM_COLORS = {"Emory": "#2F6BEA", "Piedmont": "#9B5DE5", "Wellstar": "#2BB3C0", "Grady": "#F59E0B"}
+FONT = "Geist, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+SERIF = "'EB Garamond', 'Iowan Old Style', Georgia, serif"
 
 CSS = f"""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Geist:wght@400;500;600&display=swap');
 
-:root {{ --text: {TEXT}; --text-2: {TEXT_2}; --text-3: {TEXT_3}; --line: {LINE}; --blue: {BLUE}; }}
+:root {{ --text: {TEXT}; --text-2: {TEXT_2}; --text-3: {TEXT_3}; --line: {LINE}; --blue: {BLUE}; --soft: {SOFT}; }}
 .stApp {{
   -webkit-font-smoothing: antialiased;
-  background: linear-gradient(180deg, #EEF4FD 0px, #F6F9FE 260px, {BG} 560px);
+  background:
+    radial-gradient(900px 260px at 50% 470px, rgba(255,255,255,0.95), transparent 70%),
+    linear-gradient(180deg, #2C67E0 0px, #4F87EE 150px, #8DB5F6 300px, #D3E4FB 430px, #F4F7FD 560px, {BG} 760px);
 }}
 .stApp :is(h1,h2,h3,h4,h5,h6,p,li,a,label,input,textarea,button,div,span,td,th):not([data-testid="stIconMaterial"]) {{
   font-family: {FONT} !important;
 }}
 header[data-testid="stHeader"] {{ background: transparent; }}
 #MainMenu, footer, [data-testid="stStatusWidget"], .stDeployButton, [data-testid="stToolbar"] {{ display: none !important; }}
-.block-container {{ max-width: 1120px; padding-top: 3.5rem; }}
+.block-container {{ max-width: 1100px; padding-top: 3.2rem; }}
 
 /* type */
-h1, h2, h3 {{ color: var(--text); font-weight: 600; }}
-h2 {{ font-size: 2rem; line-height: 1.12; letter-spacing: -0.02em; }}
-h3 {{ font-size: 1.5rem; line-height: 1.2; letter-spacing: -0.015em; }}
+h1, h2, h3 {{ color: var(--text); font-weight: 500; }}
+h2 {{ font-size: 2rem; line-height: 1.15; letter-spacing: -0.02em; }}
+h3 {{ font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.02em; }}
 p, li {{ color: var(--text-2); line-height: 1.55; }}
 strong {{ color: var(--text); font-weight: 600; }}
 [data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p {{ color: var(--text-3) !important; }}
 a {{ color: var(--blue) !important; text-decoration: none; }}
 
-.hero {{ text-align: center; max-width: 760px; margin: 0 auto; }}
-.hero .eyebrow {{ color: var(--blue); font-weight: 600; font-size: 1rem; letter-spacing: -0.005em; }}
-.hero h1 {{ font-size: clamp(2.4rem, 5.4vw, 4rem); line-height: 1.05; letter-spacing: -0.03em; font-weight: 700;
-  color: var(--text); margin: .5rem 0 1rem; padding: 0; }}
-.hero p {{ font-size: 1.2rem; line-height: 1.5; color: var(--text-2); margin: 0 auto; max-width: 620px; }}
-.section-label {{ color: var(--blue); font-weight: 600; font-size: .95rem; margin: 3rem 0 .1rem; }}
+/* hero: serif on sky */
+.hero {{ text-align: center; max-width: 780px; margin: 0 auto; padding-top: .4rem; }}
+.hero .eyebrow {{ color: rgba(255,255,255,.85); font-weight: 500; font-size: .95rem; }}
+.stApp .hero h1, .stApp .hero h1 * {{ font-family: {SERIF} !important; }}
+.stApp .hero h1 {{ font-size: clamp(2.8rem, 6vw, 4.6rem); line-height: 1.04;
+  letter-spacing: -0.015em; font-weight: 500; color: #FFFFFF; margin: .4rem 0 1rem; padding: 0;
+  text-shadow: 0 2px 24px rgba(20,50,140,.25); }}
+.hero p {{ font-size: 1.12rem; line-height: 1.5; color: rgba(255,255,255,.92); margin: 0 auto; max-width: 560px; }}
+.section-label {{ color: var(--blue); font-weight: 500; font-size: .95rem; margin: 3.2rem 0 .1rem; }}
 
-/* tabs: Apple segmented control */
-[data-testid="stTabs"] [role="tablist"] {{ gap: 2px; background: #E8E8ED; border: none !important; box-shadow: none !important;
-  padding: 3px; border-radius: 10px; width: fit-content; margin: 2.4rem auto 2rem; height: auto; }}
-[data-testid="stTab"] {{ height: 34px; padding: 0 20px; border-radius: 8px; cursor: pointer; transition: background 150ms ease; }}
-[data-testid="stTab"] p {{ color: var(--text) !important; font-weight: 500; font-size: .9rem; margin: 0; }}
-[data-testid="stTab"][aria-selected="true"] {{ background: #FFFFFF; box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 1px rgba(0,0,0,.04); }}
+/* tabs: white segmented control with a glossy blue selected pill */
+[data-testid="stTabs"] [role="tablist"] {{ gap: 4px; background: rgba(255,255,255,.75); border: 1px solid rgba(255,255,255,.9) !important;
+  box-shadow: 0 8px 24px -10px rgba(40,80,180,.35) !important; padding: 4px; border-radius: 14px; width: fit-content;
+  margin: 2.2rem auto 2.4rem; height: auto; backdrop-filter: blur(12px); }}
+[data-testid="stTab"] {{ height: 36px; padding: 0 18px; border-radius: 10px; cursor: pointer; transition: background 150ms ease; }}
+[data-testid="stTab"] p {{ color: var(--text-2) !important; font-weight: 500; font-size: .92rem; margin: 0; }}
+[data-testid="stTab"]:hover {{ background: rgba(47,107,234,.07); }}
+[data-testid="stTab"][aria-selected="true"] {{
+  background: radial-gradient(120% 120% at 70% 85%, rgba(255,255,255,.35), rgba(255,255,255,0) 60%), linear-gradient(180deg, #4D86F3, {BLUE});
+  box-shadow: 0 6px 14px -6px rgba(47,107,234,.7), inset 0 1px 0 rgba(255,255,255,.45), inset 0 -2px 4px rgba(20,40,160,.25); }}
+[data-testid="stTab"][aria-selected="true"] p {{ color: #FFFFFF !important; }}
 [data-testid="stTab"] .react-aria-SelectionIndicator {{ display: none !important; }}
 [data-testid="stTab"]:focus-visible {{ outline: 2px solid var(--blue); outline-offset: 2px; }}
 @media (max-width: 520px) {{
@@ -70,32 +81,42 @@ a {{ color: var(--blue) !important; text-decoration: none; }}
 }}
 
 /* inputs */
-[data-baseweb="input"], [data-baseweb="select"] > div {{ background: #FFFFFF !important; border: 1px solid #D2D2D7 !important;
-  border-radius: 12px !important; min-height: 46px; transition: border-color 150ms ease, box-shadow 150ms ease; }}
+[data-baseweb="input"], [data-baseweb="select"] > div {{ background: #FFFFFF !important; border: 1px solid {LINE} !important;
+  border-radius: 12px !important; min-height: 46px; box-shadow: 0 1px 2px rgba(20,30,70,.04);
+  transition: border-color 150ms ease, box-shadow 150ms ease; }}
 [data-baseweb="input"]:focus-within, [data-baseweb="select"] > div:focus-within {{
-  border-color: var(--blue) !important; box-shadow: 0 0 0 4px rgba(0,113,227,.15); }}
+  border-color: var(--blue) !important; box-shadow: 0 0 0 4px rgba(47,107,234,.14); }}
 [data-testid="stWidgetLabel"] p {{ font-size: .9rem !important; font-weight: 500; color: var(--text) !important; }}
 
 /* cards */
-.cards {{ display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); gap: 16px; margin: 1.4rem 0 .6rem; }}
+.cards {{ display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); gap: 14px; margin: 1.4rem 0 .6rem; }}
 @media (max-width: 760px) {{ .cards {{ grid-template-columns: 1fr; }} }}
-.card {{ padding: 22px 24px; border-radius: 18px; background: {CARD}; border: 1px solid var(--line);
-  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.08); }}
-.card .k {{ font-size: .9rem; font-weight: 500; color: var(--text-2); }}
-.card .v {{ font-size: 2.4rem; line-height: 1.1; font-weight: 600; letter-spacing: -0.025em; color: var(--text);
+.card {{ padding: 22px 24px; border-radius: 20px; background: var(--soft);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9), inset 0 0 0 1px rgba(20,30,70,.03); }}
+.card .k {{ font-size: .92rem; font-weight: 500; color: var(--text-2); }}
+.card .v {{ font-size: 2.5rem; line-height: 1.1; font-weight: 500; letter-spacing: -0.03em; color: var(--text);
   margin: 8px 0 4px; font-variant-numeric: tabular-nums; }}
 .card .s {{ font-size: .9rem; color: var(--text-3); }}
-.card.good .v {{ color: {GREEN}; }} .card.bad .v {{ color: {RED}; }} .card.accent .v {{ color: var(--blue); }}
+.card.good .v {{ color: {GREEN}; }} .card.bad .v {{ color: {RED}; }}
+.card.accent {{ background: radial-gradient(120% 90% at 80% 100%, rgba(255,255,255,.28), rgba(255,255,255,0) 60%),
+  linear-gradient(180deg, {BLUE_SOFT}, #4A7CEB); box-shadow: 0 18px 30px -18px rgba(47,107,234,.7),
+  inset 0 1px 0 rgba(255,255,255,.4); }}
+.card.accent .k, .card.accent .s {{ color: rgba(255,255,255,.85); }} .card.accent .v {{ color: #FFFFFF; }}
 
-.callout {{ padding: 30px 32px; border-radius: 20px; background: {CARD}; border: 1px solid var(--line); margin: .4rem 0 1rem;
-  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.08); }}
-.callout .eyebrow {{ color: {RED}; font-weight: 600; font-size: .95rem; }}
-.callout h2 {{ margin: .3rem 0 .7rem; font-size: clamp(1.7rem, 3.4vw, 2.4rem); letter-spacing: -0.025em; }}
-.callout p {{ margin: 0; font-size: 1.05rem; }}
-.note {{ padding: 14px 18px; border-radius: 12px; background: #F5F5F7; color: var(--text-2); font-size: .9rem; margin-top: 1.2rem; }}
+.callout {{ padding: 32px 34px; border-radius: 24px; margin: .4rem 0 1rem; color: #fff;
+  background: radial-gradient(120% 100% at 85% 100%, rgba(255,255,255,.25), rgba(255,255,255,0) 60%),
+  linear-gradient(180deg, {BLUE_SOFT}, #3F74E8); box-shadow: 0 24px 40px -24px rgba(47,107,234,.7), inset 0 1px 0 rgba(255,255,255,.4); }}
+.callout .eyebrow {{ color: rgba(255,255,255,.85); font-weight: 500; font-size: .95rem; }}
+.stApp .callout h2, .stApp .callout h2 * {{ font-family: {SERIF} !important; }}
+.stApp .callout h2 {{ color: #fff; margin: .3rem 0 .7rem; font-size: clamp(2rem, 4vw, 2.9rem);
+  letter-spacing: -0.01em; font-weight: 500; }}
+.callout p {{ margin: 0; font-size: 1.05rem; color: rgba(255,255,255,.9); }}
+.callout strong {{ color: #fff; }}
+.note {{ padding: 16px 20px; border-radius: 16px; background: linear-gradient(180deg, {SOFT}, {SOFT_2}); color: var(--text-2);
+  font-size: .9rem; margin-top: 1.4rem; }}
 
-[data-testid="stDataFrame"], [data-testid="stPlotlyChart"] {{ border: 1px solid var(--line); border-radius: 16px;
-  overflow: hidden; background: {CARD}; }}
+[data-testid="stDataFrame"], [data-testid="stPlotlyChart"] {{ border-radius: 20px; overflow: hidden; background: #FFFFFF;
+  border: 1px solid {LINE}; box-shadow: 0 1px 2px rgba(20,30,70,.04), 0 12px 32px -20px rgba(20,30,70,.18); }}
 [data-testid="stPlotlyChart"] {{ padding: 10px 8px 4px; }}
 
 @media (prefers-reduced-motion: reduce) {{ * {{ transition: none !important; }} }}
@@ -103,19 +124,18 @@ a {{ color: var(--blue) !important; text-decoration: none; }}
 """
 
 # --- plotly template ------------------------------------------------------
-pio.templates["apple_light"] = go.layout.Template(layout=dict(
+pio.templates["cluely_light"] = go.layout.Template(layout=dict(
     font=dict(family=FONT, color=TEXT_2, size=13),
     paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-    colorway=[BLUE, "#AF52DE", "#30B0C7", "#FF9500", DOT_GREEN, DOT_RED],
-    xaxis=dict(automargin=True, gridcolor="#F0F0F3", zerolinecolor="#E5E5EA", linecolor=LINE,
+    colorway=[BLUE, "#9B5DE5", "#2BB3C0", "#F59E0B", DOT_GREEN, DOT_RED],
+    xaxis=dict(automargin=True, gridcolor="#EEF0F5", zerolinecolor=LINE, linecolor=LINE,
                tickfont=dict(color=TEXT_3), title=dict(font=dict(color=TEXT_3, size=12))),
-    yaxis=dict(automargin=True, gridcolor="#F0F0F3", zerolinecolor="#E5E5EA", linecolor=LINE,
+    yaxis=dict(automargin=True, gridcolor="#EEF0F5", zerolinecolor=LINE, linecolor=LINE,
                tickfont=dict(color=TEXT_2), title=dict(font=dict(color=TEXT_3, size=12))),
     legend=dict(font=dict(color=TEXT_2), bgcolor="rgba(0,0,0,0)"),
     hoverlabel=dict(bgcolor="#FFFFFF", bordercolor=LINE, font=dict(family=FONT, color=TEXT)),
-    coloraxis=dict(colorbar=dict(outlinewidth=0, tickfont=dict(color=TEXT_3), title=dict(font=dict(color=TEXT_3)))),
 ))
-pio.templates.default = "apple_light"
+pio.templates.default = "cluely_light"
 
 
 def cards(items, n=None):

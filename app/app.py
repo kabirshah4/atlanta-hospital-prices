@@ -123,9 +123,9 @@ with tab_search:
         if not grid.empty:
             gfig = px.imshow(grid, text_auto="$,.0f", aspect="auto", color_continuous_scale=PRICE_SCALE,
                              labels=dict(color="Price"))
-            gfig.update_traces(textfont=dict(color="#1D1D1F", size=12), xgap=2, ygap=2)
+            gfig.update_traces(textfont=dict(color="#1A1B20", size=12), xgap=2, ygap=2)
             gfig.update_layout(height=560, margin=dict(l=0, r=10, t=40, b=10), xaxis_title=None, yaxis_title=None,
-                               xaxis=dict(side="top", tickfont=dict(color="#1D1D1F", size=13)),
+                               xaxis=dict(side="top", tickfont=dict(color="#1A1B20", size=13)),
                                coloraxis_showscale=False)
             st.plotly_chart(gfig, width="stretch", theme=None)
             st.caption("Each cell is what that insurer has agreed to pay that hospital. Blank = not published.")
@@ -174,7 +174,7 @@ difference for the same insurer and the same operation.</p></div>""", unsafe_all
     vd["factor"] = vd.factor.map({"system": "Hospital system", "insurer": "Insurer"})
     order = var.sort_values("system").procedure.tolist()
     vfig = px.bar(vd, x="share", y="procedure", color="factor", barmode="group", height=760,
-                  category_orders={"procedure": order}, color_discrete_map={"Hospital system": "#AF52DE", "Insurer": BLUE})
+                  category_orders={"procedure": order}, color_discrete_map={"Hospital system": "#9B5DE5", "Insurer": BLUE})
     vfig.update_layout(xaxis_tickformat=".0%", xaxis_title="Share of price differences explained", yaxis_title=None,
                        legend_title=None, legend=dict(orientation="h", y=1.03, x=0),
                        margin=dict(l=0, r=10, t=30, b=64))
