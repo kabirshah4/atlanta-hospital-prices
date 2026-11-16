@@ -15,7 +15,7 @@ PROCEDURES = [
     ("71250", "CPT", "CT scan of chest (no contrast)", "Imaging", "ct cat scan chest lungs"),
     ("77067", "CPT", "Screening mammogram", "Imaging", "mammogram breast screening"),
     ("76700", "CPT", "Abdominal ultrasound", "Imaging", "ultrasound sonogram belly abdomen"),
-    ("76805", "CPT", "Pregnancy ultrasound", "Imaging", "ultrasound sonogram pregnancy baby ob"),
+    ("76805", "CPT", "Pregnancy ultrasound", "Imaging", "ultrasound sonogram pregnancy prenatal ob"),
     ("71046", "CPT", "Chest X-ray (2 views)", "Imaging", "xray x-ray chest lungs"),
     ("93306", "CPT", "Echocardiogram (heart ultrasound)", "Imaging", "echo heart ultrasound echocardiogram"),
     ("93000", "CPT", "Electrocardiogram (ECG/EKG)", "Tests", "ekg ecg heart rhythm"),
