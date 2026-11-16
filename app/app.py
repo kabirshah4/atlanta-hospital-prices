@@ -4,6 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -86,11 +87,13 @@ with tab_search:
 
     lo, hi = have.iloc[0], have.iloc[-1]
     m1, m2, m3 = st.columns(3)
-    m1.metric("Cheapest", money(lo.price), lo.hospital, delta_color="off")
-    m2.metric("Most expensive", money(hi.price), hi.hospital, delta_color="off")
-    m3.metric("You could save", money(hi.price - lo.price),
-              f"{hi.price / lo.price:.1f}× difference" if lo.price > 0 else "", delta_color="off")
-    st.caption(f"Showing the hospital's facility {label} for **{choice}**. "
+    m1.metric("Cheapest", money(lo.price))
+    m1.caption(lo.hospital)
+    m2.metric("Most expensive", money(hi.price))
+    m2.caption(hi.hospital)
+    m3.metric("You could save", money(hi.price - lo.price))
+    m3.caption(f"The priciest hospital charges {hi.price / lo.price:.1f}× as much" if lo.price > 0 else "")
+    st.caption(f"Showing each hospital's {label} for **{choice}** (the hospital's own fee). "
                "Doctor's fees are billed separately and are not included.")
 
     mc, tc = st.columns([3, 2])
@@ -136,13 +139,18 @@ with tab_find:
 
     st.subheader("1. Prices vary a lot between hospitals")
     sp = spread.sort_values("ratio")
-    rng = pd.concat([sp.assign(price=sp.cheapest_price, end="Cheapest"), sp.assign(price=sp.priciest_price, end="Most expensive")])
-    rfig = px.line(rng, x="price", y="procedure", line_group="procedure", markers=True, log_x=True,
-                   color="end", color_discrete_map={"Cheapest": "#1a7f37", "Most expensive": "#cf222e"},
-                   hover_data={"cheapest": True, "priciest": True}, height=760)
-    rfig.update_traces(line=dict(color="#999"))
-    rfig.update_layout(xaxis_title="Typical insured price (log scale)", yaxis_title=None, legend_title=None,
-                       margin=dict(l=0, r=0, t=10, b=0))
+    rfig = go.Figure()
+    for r in sp.itertuples():
+        rfig.add_trace(go.Scatter(x=[r.cheapest_price, r.priciest_price], y=[r.procedure] * 2, mode="lines",
+                                  line=dict(color="#c9ccd1", width=3), showlegend=False, hoverinfo="skip"))
+    for col, name, color, who in [("cheapest_price", "Cheapest hospital", "#1a7f37", "cheapest"),
+                                  ("priciest_price", "Most expensive hospital", "#cf222e", "priciest")]:
+        rfig.add_trace(go.Scatter(x=sp[col], y=sp.procedure, mode="markers", name=name,
+                                  marker=dict(color=color, size=11), customdata=sp[[who, "ratio"]],
+                                  hovertemplate="%{customdata[0]}<br>$%{x:,.0f} (%{customdata[1]:.1f}× gap)<extra></extra>"))
+    rfig.update_layout(height=760, xaxis_type="log", xaxis_title="Typical insured price (log scale)",
+                       xaxis_tickprefix="$", legend=dict(orientation="h", y=1.04, x=0),
+                       margin=dict(l=0, r=0, t=30, b=0))
     st.plotly_chart(rfig, width="stretch")
     st.caption("For each procedure: the cheapest and most expensive hospital's typical insured price. "
                "The median procedure costs about 2× more at the priciest hospital.")
