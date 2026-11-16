@@ -1,0 +1,25 @@
+location-name: Children's Healthcare of Atlanta at Scottish Rite
+source-page-url: https://www.choa.org/patients/bills-and-insurance
+mrf-url: https://www.choa.org/-/media/Files/Childrens/billing/standard-charges/2026/580572465_childrens-healthcare-of-atl-at-scottish-rite_standardcharges.csv
+contact-name: Contract Analytics Department
+contact-email: Contract.Analytics@CHOA.org
+
+location-name: Children's Healthcare of Atlanta at Arthur M. Blank Hospital
+source-page-url: https://www.choa.org/patients/bills-and-insurance
+mrf-url: https://www.choa.org/-/media/Files/Childrens/billing/standard-charges/2026/58-0572412_childrens-healthcare-of-atl-at-arthur-m-blank_standardcharges.csv
+contact-name: Contract Analytics Department
+contact-email: Contract.Analytics@CHOA.org
+
+location-name: Children's Healthcare of Atlanta at Meridian Mark
+source-page-url: https://www.choa.org/patients/bills-and-insurance
+mrf-url: https://www.choa.org/-/media/Files/Childrens/billing/standard-charges/2026/01-0723254_childrens-healthcare-of-atl-at-meridian-mark_standardcharges.csv
+contact-name: Contract Analytics Department
+contact-email: Contract.Analytics@CHOA.org
+
+location-name: Children's Healthcare of Atlanta at Hughes Spalding
+source-page-url: https://www.choa.org/patients/bills-and-insurance
+mrf-url: https://www.choa.org/-/media/Files/Childrens/billing/standard-charges/2026/204144787_childrens-healthcare-of-atl-at-hughes-spalding_standardcharges.csv
+contact-name: Contract Analytics Department
+contact-email: Contract.Analytics@CHOA.org
+
+

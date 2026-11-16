@@ -1,0 +1,29 @@
+location-name: Northside Hospital Atlanta
+source-page-url: https://www.northside.com/patients-visitors/billing-and-insurance/price-transparency-information
+mrf-url: https://assets.northside.com/price-transparency/581954432-1457396079_northside-hospital-inc_standardcharges.json
+contact-name: Jorge Hernandez
+contact-email: Price.Transparency@Northside.com
+
+location-name: Northside Hospital Cherokee
+source-page-url: https://www.northside.com/patients-visitors/billing-and-insurance/price-transparency-information
+mrf-url: https://assets.northside.com/price-transparency/581954432-1225050396_northside-hospital-inc_standardcharges.json
+contact-name: Jorge Hernandez
+contact-email: Price.Transparency@Northside.com
+
+location-name: Northside Hospital Duluth
+source-page-url: https://www.northside.com/patients-visitors/billing-and-insurance/price-transparency-information
+mrf-url: https://assets.northside.com/price-transparency/581954432-1790715381_northside-hospital-inc_standardcharges.json
+contact-name: Jorge Hernandez
+contact-email: Price.Transparency@Northside.com
+
+location-name: Northside Hospital Forsyth
+source-page-url: https://www.northside.com/patients-visitors/billing-and-insurance/price-transparency-information
+mrf-url: https://assets.northside.com/price-transparency/581954432-1376574277_northside-hospital-inc_standardcharges.json
+contact-name: Jorge Hernandez
+contact-email: Price.Transparency@Northside.com
+
+location-name: Northside Hospital Gwinnett
+source-page-url: https://www.northside.com/patients-visitors/billing-and-insurance/price-transparency-information
+mrf-url: https://assets.northside.com/price-transparency/581954432-1952340994_northside-hospital-inc_standardcharges.json
+contact-name: Jorge Hernandez
+contact-email: Price.Transparency@Northside.com

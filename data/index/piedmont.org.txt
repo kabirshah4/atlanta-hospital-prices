@@ -1,0 +1,101 @@
+location-name: Piedmont Atlanta
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/580566213_piedmont-atlanta-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Athens Regional
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/582179986_piedmont-athens-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont Augusta
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/581581103_piedmont-augusta-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Cartersville
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/582433438_piedmont-cartersville-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont Columbus Regional - Midtown
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/581685139_piedmont-columbus-regional-midtown-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont Columbus Regional - Northside
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/331216751_piedmont-columbus-regional-northside-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont Eastside
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/582433432_piedmont-eastside-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont Fayette
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/582322328_piedmont-fayette-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Henry
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/582200195_piedmont-henry-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont Macon
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/621736983_piedmont-macon-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Macon North
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/621736985_piedmont-macon-north-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont McDuffie
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/454166209_piedmont-mcduffie-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Mountainside
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/352228583_piedmont-mountainside-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Newnan
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/205077249_piedmont-newnan-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
+
+location-name: Piedmont Newton
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/582155150_piedmont-newton-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Rockdale
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/300999841_piedmont-rockdale-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org
+
+location-name: Piedmont Walton
+source-page-url: https://www.piedmont.org/patients-and-visitors/price-estimates
+mrf-url: https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/824194264_piedmont-walton-hospital_standardcharges.zip
+contact-name: Carey Kawano
+contact-email: Carey.Kawano@piedmont.org 
