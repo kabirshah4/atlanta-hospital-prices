@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 import theme
-from theme import AMBER, BLUE, GREEN, PRICE_SCALE, RED, SYSTEM_COLORS, cards
+from theme import BLUE, DOT_GREEN, DOT_RED, PRICE_SCALE, SYSTEM_COLORS, cards
 
 ROOT = Path(__file__).resolve().parents[1]
 MAJOR = ["Anthem BCBS", "UnitedHealthcare", "Aetna", "Cigna", "Kaiser"]
@@ -53,10 +53,10 @@ def search(q):
 
 
 st.markdown(f"""<div class="hero">
-<div class="eyebrow"><span class="dot"></span>Atlanta Hospital Price Checker · {nums['n_hospitals']} hospitals · {nums['n_procedures']} procedures</div>
+<div class="eyebrow">Atlanta Hospital Price Checker</div>
 <h1>Same procedure.<br>Very different price.</h1>
-<p>Real prices from metro Atlanta hospitals' own published price files, made readable. Find out what a procedure
-costs at each hospital with your insurance, before you book.</p></div>""", unsafe_allow_html=True)
+<p>See what {nums['n_procedures']} common procedures cost at {nums['n_hospitals']} Atlanta hospitals with your insurance,
+using the prices hospitals are required to publish.</p></div>""", unsafe_allow_html=True)
 
 tab_search, tab_find, tab_about = st.tabs(["Compare prices", "What we found", "How it works"])
 
@@ -102,9 +102,9 @@ with tab_search:
     fig = px.scatter_map(have, lat="lat", lon="lon", color="price", size=[14] * len(have),
                          color_continuous_scale=PRICE_SCALE, hover_name="hospital",
                          hover_data={"price": ":$,.0f", "lat": False, "lon": False, "stars": True},
-                         zoom=8.4, height=460, map_style="carto-darkmatter")
-    fig.update_layout(margin=dict(l=0, r=0, t=0, b=0), coloraxis_colorbar=dict(title="Price", tickprefix="$"))
-    mc.plotly_chart(fig, width="stretch")
+                         zoom=8.4, height=460, map_style="carto-positron")
+    fig.update_layout(margin=dict(l=0, r=0, t=0, b=0), coloraxis_showscale=False)
+    mc.plotly_chart(fig, width="stretch", theme=None)
 
     table = have.assign(Price=have.price.map(money), Quality=have.stars.map(lambda s: "★" * int(s) + "☆" * (5 - int(s))))
     tc.dataframe(table[["hospital", "Price", "Quality"]].rename(columns={"hospital": "Hospital"}),
@@ -113,21 +113,21 @@ with tab_search:
                                 "Price": st.column_config.TextColumn(width=72),
                                 "Quality": st.column_config.TextColumn("Quality", width=96,
                                                                        help="Medicare overall star rating")})
-    if missing:
-        st.caption("No published price for this option at: " + ", ".join(missing) + ".")
+    st.caption("Green = cheaper, red = pricier." + (" No published price for this option at: " + ", ".join(missing) + "."
+               if missing else ""))
 
     if pay not in MAJOR and not pay.startswith("Paying cash"):
-        st.markdown('<div class="section-label">Insurer comparison</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-label">By insurer</div>', unsafe_allow_html=True)
         st.subheader("Your insurer changes the price too")
         grid = by_brand[by_brand.code == code].pivot_table(index="hospital", columns="brand", values="price")
         if not grid.empty:
             gfig = px.imshow(grid, text_auto="$,.0f", aspect="auto", color_continuous_scale=PRICE_SCALE,
                              labels=dict(color="Price"))
-            gfig.update_traces(textfont=dict(color="rgba(10,10,12,0.85)", size=12), xgap=2, ygap=2)
-            gfig.update_layout(height=560, margin=dict(l=0, r=0, t=40, b=10), xaxis_title=None, yaxis_title=None,
-                               xaxis=dict(side="top", tickfont=dict(color="#F5F5F7", size=13)),
-                               coloraxis_colorbar=dict(tickprefix="$", title=None))
-            st.plotly_chart(gfig, width="stretch")
+            gfig.update_traces(textfont=dict(color="#1D1D1F", size=12), xgap=2, ygap=2)
+            gfig.update_layout(height=560, margin=dict(l=0, r=10, t=40, b=10), xaxis_title=None, yaxis_title=None,
+                               xaxis=dict(side="top", tickfont=dict(color="#1D1D1F", size=13)),
+                               coloraxis_showscale=False)
+            st.plotly_chart(gfig, width="stretch", theme=None)
             st.caption("Each cell is what that insurer has agreed to pay that hospital. Blank = not published.")
 
     st.markdown('<div class="note">Estimates only, from each hospital\'s published price file. Your share depends on '
@@ -136,7 +136,7 @@ with tab_search:
 
 # ---------------------------------------------------------------- findings
 with tab_find:
-    st.markdown("""<div class="callout"><div class="eyebrow">Headline finding</div>
+    st.markdown("""<div class="callout"><div class="eyebrow">The biggest gap we found</div>
 <h2>The same surgery, twice the price, 8 miles apart.</h2>
 <p>With <strong>Cigna</strong>, a hip or knee replacement is listed at <strong>$37,652</strong> at Emory Johns Creek
 Hospital and <strong>$75,616</strong> at Wellstar North Fulton Hospital, 8.3 miles away: a <strong>$37,964</strong>
@@ -148,15 +148,15 @@ difference for the same insurer and the same operation.</p></div>""", unsafe_all
                        ("Explained by hospital", f"{ve['system']:.0%}", "system, of price differences", "")]),
                 unsafe_allow_html=True)
 
-    st.markdown('<div class="section-label">01 · Spread</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Spread</div>', unsafe_allow_html=True)
     st.subheader("Prices vary a lot between hospitals")
     sp = spread.sort_values("ratio")
     rfig = go.Figure()
     for r in sp.itertuples():
         rfig.add_trace(go.Scatter(x=[r.cheapest_price, r.priciest_price], y=[r.procedure] * 2, mode="lines",
-                                  line=dict(color="rgba(255,255,255,0.14)", width=3), showlegend=False, hoverinfo="skip"))
-    for col, name, color, who in [("cheapest_price", "Cheapest hospital", GREEN, "cheapest"),
-                                  ("priciest_price", "Most expensive hospital", RED, "priciest")]:
+                                  line=dict(color="#D2D2D7", width=3), showlegend=False, hoverinfo="skip"))
+    for col, name, color, who in [("cheapest_price", "Cheapest hospital", DOT_GREEN, "cheapest"),
+                                  ("priciest_price", "Most expensive hospital", DOT_RED, "priciest")]:
         rfig.add_trace(go.Scatter(x=sp[col], y=sp.procedure, mode="markers", name=name,
                                   marker=dict(color=color, size=11), customdata=sp[[who, "ratio"]],
                                   hovertemplate="%{customdata[0]}<br>$%{x:,.0f} (%{customdata[1]:.1f}× gap)<extra></extra>"))
@@ -164,21 +164,21 @@ difference for the same insurer and the same operation.</p></div>""", unsafe_all
                        xaxis=dict(tickvals=[10, 30, 100, 300, 1000, 3000, 10000, 30000, 100000],
                                   ticktext=["$10", "$30", "$100", "$300", "$1k", "$3k", "$10k", "$30k", "$100k"]),
                        legend=dict(orientation="h", y=1.03, x=0), margin=dict(l=0, r=10, t=30, b=64))
-    st.plotly_chart(rfig, width="stretch")
+    st.plotly_chart(rfig, width="stretch", theme=None)
     st.caption("For each procedure: the cheapest and most expensive hospital's typical insured price. "
                "The median procedure costs about 2× more at the priciest hospital.")
 
-    st.markdown('<div class="section-label">02 · Hospital vs insurer</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Hospital vs. insurer</div>', unsafe_allow_html=True)
     st.subheader("Your insurer matters about as much as your hospital")
     vd = var.melt(id_vars=["procedure"], value_vars=["system", "insurer"], var_name="factor", value_name="share")
     vd["factor"] = vd.factor.map({"system": "Hospital system", "insurer": "Insurer"})
     order = var.sort_values("system").procedure.tolist()
     vfig = px.bar(vd, x="share", y="procedure", color="factor", barmode="group", height=760,
-                  category_orders={"procedure": order}, color_discrete_map={"Hospital system": "#BF5AF2", "Insurer": BLUE})
+                  category_orders={"procedure": order}, color_discrete_map={"Hospital system": "#AF52DE", "Insurer": BLUE})
     vfig.update_layout(xaxis_tickformat=".0%", xaxis_title="Share of price differences explained", yaxis_title=None,
                        legend_title=None, legend=dict(orientation="h", y=1.03, x=0),
                        margin=dict(l=0, r=10, t=30, b=64))
-    st.plotly_chart(vfig, width="stretch")
+    st.plotly_chart(vfig, width="stretch", theme=None)
     st.markdown(
         f"Knowing only the hospital system explains about **{nums['variance_explained']['system']:.0%}** of the price "
         f"differences for a typical procedure; knowing only the insurer explains **{nums['variance_explained']['insurer']:.0%}**; "
@@ -186,19 +186,19 @@ difference for the same insurer and the same operation.</p></div>""", unsafe_all
         "and ER visits the hospital system matters most; for imaging and lab tests, the insurer matters about as much. "
         "Prices are mostly set system-wide: every Emory hospital charges a given insurer the same rate for a brain MRI.")
 
-    st.markdown('<div class="section-label">03 · Quality</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Quality</div>', unsafe_allow_html=True)
     st.subheader("Higher prices don't mean higher quality")
     ifig = px.scatter(idx, x="stars", y="price_index", color="system", hover_name="hospital", height=420,
                       color_discrete_map=SYSTEM_COLORS)
     ifig.update_traces(marker=dict(size=13))
     ifig.update_layout(xaxis_title="Medicare quality rating (stars)", yaxis_title="Price index (1.0 = typical Atlanta hospital)",
                        xaxis=dict(dtick=1), legend=dict(orientation="h", y=1.08, x=0, title=None),
-                       margin=dict(l=10, r=10, t=40, b=50))
-    st.plotly_chart(ifig, width="stretch")
+                       margin=dict(l=10, r=10, t=40, b=64))
+    st.plotly_chart(ifig, width="stretch", theme=None)
     st.caption(f"Rank correlation between price and star rating: {nums['stars_price_spearman']:.2f} "
                "(close to zero, and only 18 hospitals, so we can't claim any link either way).")
 
-    st.markdown('<div class="section-label">04 · Cash</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Cash prices</div>', unsafe_allow_html=True)
     st.subheader("The 'cash price' isn't always a discount")
     cs = nums["cash_as_share_of_list"]
     st.markdown(
