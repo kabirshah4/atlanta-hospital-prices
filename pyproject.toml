@@ -1,0 +1,22 @@
+[project]
+name = "atlanta-hospital-prices"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "thanosthings", email = "goofygaming45@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=2.0.0",
+    "pandas>=3.1.1",
+    "plotly>=7.1.0",
+    "pydeck>=0.9.3",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+atlanta-hospital-prices = "atlanta_hospital_prices:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"

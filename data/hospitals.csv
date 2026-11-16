@@ -1,0 +1,19 @@
+hospital,address,lat,lon,system,ownership
+Emory Decatur Hospital,"2701 N Decatur Road, Decatur, GA 30033",33.791960048737,-84.283657114701,Emory,Nonprofit
+Emory Hillandale Hospital,"2801 Dekalb Medical Parkway, Lithonia, GA 30058",33.707707298021,-84.146917982459,Emory,Nonprofit
+Emory Johns Creek Hospital,"6325 Hospital Parkway, Johns Creek, GA 30097",34.067962746041,-84.175561543287,Emory,Nonprofit
+Emory Saint Joseph's Hospital,"5665 Peachtree Dunwoody Road, Atlanta, GA 30342",33.908368286647,-84.351785796775,Emory,Nonprofit
+Emory University Hospital,"1364 Clifton Road NE, Atlanta, GA 30322",33.7925,-84.3213,Emory,Nonprofit
+Emory University Hospital Midtown,"550 Peachtree St NE, Atlanta, GA 30308",33.769679860074,-84.385223314031,Emory,Nonprofit
+Grady Health System,"80 Jesse Hill Jr Dr SE, Atlanta, GA 30303",33.754209001803,-84.38039298681,Grady,Public (county)
+Piedmont Atlanta,"1968 Peachtree Road NW, Atlanta, GA 30309",33.808405448435,-84.393663767765,Piedmont,Nonprofit
+Piedmont Eastside,"1700 Medical Way, Snellville, GA 30078",33.877585159311,-84.019728209664,Piedmont,Nonprofit
+Piedmont Fayette,"1255 Highway 54 West, Fayetteville, GA 30214",33.450933855808,-84.507832660308,Piedmont,Nonprofit
+Piedmont Henry,"1133 Eagles Landing Parkway, Stockbridge, GA 30281",33.5226,-84.2289,Piedmont,Nonprofit
+Piedmont Newnan,"745 Poplar Road, Newnan, GA 30265",33.359276018403,-84.753858956344,Piedmont,Nonprofit
+Piedmont Rockdale,"1412 Milstead Avenue, Conyers, GA 30012",33.680213140615,-84.000091622711,Piedmont,Nonprofit
+Wellstar Cobb Hospital,"3950 Austell Rd, Austell, GA 30106",33.858241120512,-84.600562034916,Wellstar,Nonprofit
+Wellstar Douglas Hospital,"8954 Hospital Drive, Douglasville, GA 30134",33.739475523208,-84.73294377139,Wellstar,Nonprofit
+Wellstar Kennestone Hospital,"677 Church Street, Marietta, GA 30060",33.968681646965,-84.550305432222,Wellstar,Nonprofit
+Wellstar North Fulton Hospital,"3000 Hospital Boulevard, Roswell, GA 30076",34.062319836873,-84.320425123015,Wellstar,Nonprofit
+Wellstar Paulding Hospital,"2518 Jimmy Lee Smith Parkway, Hiram, GA 30141",33.902377134979,-84.78510603964,Wellstar,Nonprofit
